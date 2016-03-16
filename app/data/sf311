@@ -1,0 +1,693 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "zzzz-zzzz",
+      "name" : "Case Data from San Francisco 311 (SF311)",
+      "attribution" : "San Francisco 311",
+      "attributionLink" : "http://www.sf311.org",
+      "averageRating" : 0,
+      "category" : "City Infrastructure",
+      "description" : "SF311 cases created since 7/1/2008 with location information",
+      "displayType" : "table",
+      "downloadCount" : 0,
+      "licenseId" : "PDDL",
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 0,
+      "publicationAppendEnabled" : false,
+      "publicationStage" : "published",
+      "rowClass" : "",
+      "rowIdentifierColumnId" : 230488349,
+      "rowsUpdatedAt" : 1458147826,
+      "rowsUpdatedBy" : "jmys-xxvb",
+      "tableId" : 5618180,
+      "totalTimesRated" : 0,
+      "viewCount" : 0,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : 230488349,
+        "name" : "CaseID",
+        "dataTypeName" : "number",
+        "fieldName" : "case_id",
+        "position" : 1,
+        "renderTypeName" : "number",
+        "tableColumnId" : 1563799,
+        "width" : 67,
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "true",
+          "align" : "right"
+        }
+      }, {
+        "id" : 230488350,
+        "name" : "Opened",
+        "dataTypeName" : "calendar_date",
+        "fieldName" : "opened",
+        "position" : 2,
+        "renderTypeName" : "calendar_date",
+        "tableColumnId" : 1563800,
+        "width" : 149,
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 230488351,
+        "name" : "Closed",
+        "dataTypeName" : "calendar_date",
+        "fieldName" : "closed",
+        "position" : 3,
+        "renderTypeName" : "calendar_date",
+        "tableColumnId" : 1563801,
+        "width" : 143,
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 230488352,
+        "name" : "Updated",
+        "dataTypeName" : "calendar_date",
+        "description" : "Date & Time of Last Update",
+        "fieldName" : "updated",
+        "position" : 4,
+        "renderTypeName" : "calendar_date",
+        "tableColumnId" : 4311794,
+        "width" : 138,
+        "format" : {
+          "align" : "left",
+          "view" : "date_time"
+        }
+      }, {
+        "id" : 230488353,
+        "name" : "Status",
+        "dataTypeName" : "text",
+        "fieldName" : "status",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1563802,
+        "width" : 85,
+        "format" : { }
+      }, {
+        "id" : 230488354,
+        "name" : "Status Notes",
+        "dataTypeName" : "text",
+        "description" : " Explanation of why status was changed to current state or more details on current status than conveyed with status alone ",
+        "fieldName" : "status_notes",
+        "position" : 6,
+        "renderTypeName" : "text",
+        "tableColumnId" : 31922986,
+        "width" : 164,
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 230488355,
+        "name" : "Responsible Agency",
+        "dataTypeName" : "text",
+        "fieldName" : "responsible_agency",
+        "position" : 7,
+        "renderTypeName" : "text",
+        "tableColumnId" : 4311793,
+        "width" : 137,
+        "format" : { }
+      }, {
+        "id" : 230488356,
+        "name" : "Category",
+        "dataTypeName" : "text",
+        "fieldName" : "category",
+        "position" : 8,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1563804,
+        "width" : 196,
+        "format" : { }
+      }, {
+        "id" : 230488357,
+        "name" : "Request Type",
+        "dataTypeName" : "text",
+        "fieldName" : "request_type",
+        "position" : 9,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1563805,
+        "width" : 244,
+        "format" : { }
+      }, {
+        "id" : 230488358,
+        "name" : "Request Details",
+        "dataTypeName" : "text",
+        "fieldName" : "request_details",
+        "position" : 10,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1563806,
+        "width" : 280,
+        "format" : { }
+      }, {
+        "id" : 230488359,
+        "name" : "Address",
+        "dataTypeName" : "text",
+        "fieldName" : "address",
+        "position" : 11,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1563803,
+        "width" : 184,
+        "format" : { }
+      }, {
+        "id" : 230488360,
+        "name" : "Supervisor District",
+        "dataTypeName" : "number",
+        "fieldName" : "supervisor_district",
+        "position" : 12,
+        "renderTypeName" : "number",
+        "tableColumnId" : 1563807,
+        "width" : 123,
+        "format" : { }
+      }, {
+        "id" : 230488361,
+        "name" : "Neighborhood",
+        "dataTypeName" : "text",
+        "fieldName" : "neighborhood",
+        "position" : 13,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1563808,
+        "width" : 186,
+        "format" : { }
+      }, {
+        "id" : 230488362,
+        "name" : "Point",
+        "dataTypeName" : "location",
+        "fieldName" : "point",
+        "position" : 14,
+        "renderTypeName" : "location",
+        "tableColumnId" : 1563809,
+        "width" : 211,
+        "format" : { },
+        "subColumnTypes" : [ "human_address", "latitude", "longitude", "machine_address", "needs_recoding" ]
+      }, {
+        "id" : 230488363,
+        "name" : "Source",
+        "dataTypeName" : "text",
+        "description" : "how the service request was made",
+        "fieldName" : "source",
+        "position" : 15,
+        "renderTypeName" : "text",
+        "tableColumnId" : 9597122,
+        "width" : 100,
+        "format" : { }
+      }, {
+        "id" : 230488364,
+        "name" : "Media URL",
+        "dataTypeName" : "url",
+        "fieldName" : "media_url",
+        "position" : 16,
+        "renderTypeName" : "url",
+        "tableColumnId" : 18849526,
+        "width" : 100,
+        "format" : { },
+        "subColumnTypes" : [ "url", "description" ]
+      } ],
+      "grants" : [ {
+        "inherited" : true,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Open Data Commons Public Domain Dedication and License",
+        "termsLink" : "http://opendatacommons.org/licenses/pddl/1.0/"
+      },
+      "metadata" : {
+        "custom_fields" : {
+          "Detailed Descriptive" : {
+            "Geographic unit" : "Latitude/longitude"
+          },
+          "Publishing Details" : {
+            "Data change frequency" : "Multiple times per hour",
+            "Publishing frequency" : "Daily"
+          },
+          "Department Metrics" : {
+            "Publishing Department" : "311"
+          }
+        },
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        },
+        "rowLabel" : "311 case",
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "jsonQuery" : {
+          "order" : [ {
+            "ascending" : false,
+            "columnFieldName" : "opened"
+          } ],
+          "where" : {
+            "value" : [ "2016-03-13T00:00:00", "2016-03-13T12:00:00" ],
+            "operator" : "BETWEEN",
+            "columnFieldName" : "opened",
+            "metadata" : {
+              "freeform" : true,
+              "unifiedVersion" : 2,
+              "tableColumnId" : {
+                "244069" : 1563800
+              },
+              "operator" : "BETWEEN"
+            }
+          }
+        },
+        "thumbnail" : {
+          "page" : {
+            "created" : true,
+            "filename" : "page.png-762.406.47.4.png",
+            "selection" : {
+              "height" : 406,
+              "width" : 762,
+              "y1" : 4,
+              "y2" : 410,
+              "x2" : 809,
+              "x1" : 47
+            }
+          }
+        },
+        "rdfSubject" : "0",
+        "filterCondition" : {
+          "value" : "AND",
+          "children" : [ {
+            "value" : "OR",
+            "type" : "operator",
+            "metadata" : {
+              "tableColumnId" : {
+                "244069" : 1563800
+              },
+              "operator" : "BETWEEN"
+            }
+          }, {
+            "value" : "OR",
+            "type" : "operator",
+            "metadata" : {
+              "customValues" : [ [ "Open" ], [ "Closed" ] ],
+              "tableColumnId" : {
+                "244069" : 1563802
+              },
+              "operator" : "EQUALS"
+            }
+          }, {
+            "value" : "OR",
+            "type" : "operator",
+            "metadata" : {
+              "customValues" : [ [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], [ 6 ], [ 7 ], [ 8 ], [ 9 ], [ 10 ], [ 11 ] ],
+              "tableColumnId" : {
+                "244069" : 1563807
+              },
+              "operator" : "EQUALS"
+            }
+          } ],
+          "type" : "operator",
+          "metadata" : {
+            "unifiedVersion" : 2,
+            "advanced" : true
+          }
+        },
+        "rowIdentifier" : "230488349",
+        "rdfClass" : ""
+      },
+      "query" : {
+        "filterCondition" : {
+          "type" : "operator",
+          "value" : "AND",
+          "children" : [ {
+            "type" : "operator",
+            "value" : "OR",
+            "children" : [ {
+              "type" : "operator",
+              "value" : "BETWEEN",
+              "children" : [ {
+                "columnId" : 230488350,
+                "type" : "column"
+              }, {
+                "type" : "literal",
+                "value" : "2016-03-13T00:00:00"
+              }, {
+                "type" : "literal",
+                "value" : "2016-03-13T12:00:00"
+              } ],
+              "metadata" : {
+                "freeform" : true
+              }
+            } ],
+            "metadata" : {
+              "tableColumnId" : {
+                "244069" : 1563800
+              },
+              "operator" : "BETWEEN"
+            }
+          }, {
+            "type" : "operator",
+            "value" : "OR",
+            "metadata" : {
+              "customValues" : [ [ "Open" ], [ "Closed" ] ],
+              "tableColumnId" : {
+                "244069" : 1563802
+              },
+              "operator" : "EQUALS"
+            }
+          }, {
+            "type" : "operator",
+            "value" : "OR",
+            "metadata" : {
+              "customValues" : [ [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], [ 6 ], [ 7 ], [ 8 ], [ 9 ], [ 10 ], [ 11 ] ],
+              "tableColumnId" : {
+                "244069" : 1563807
+              },
+              "operator" : "EQUALS"
+            }
+          } ],
+          "metadata" : {
+            "unifiedVersion" : 2
+          }
+        },
+        "orderBys" : [ {
+          "ascending" : false,
+          "expression" : {
+            "columnId" : 230488350,
+            "type" : "column"
+          }
+        } ]
+      },
+      "rights" : [ "read" ],
+      "sortBys" : [ {
+        "id" : 0,
+        "viewColumnId" : 230488350
+      } ],
+      "tableAuthor" : {
+        "id" : "isin-8y46",
+        "displayName" : "AndyM",
+        "profileImageUrlLarge" : "/api/users/isin-8y46/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/isin-8y46/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/isin-8y46/profile_images/TINY",
+        "roleName" : "publisher",
+        "screenName" : "AndyM",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_nominations", "approve_nominations", "moderate_comments", "manage_stories", "feature_items", "change_configurations", "view_domain", "view_others_datasets", "edit_sdp", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "manage_provenance", "view_story", "view_unpublished_story", "view_all_dataset_status_logs" ]
+      },
+      "viewFilters" : {
+        "type" : "operator",
+        "value" : "AND",
+        "children" : [ {
+          "type" : "operator",
+          "value" : "OR",
+          "children" : [ {
+            "type" : "operator",
+            "value" : "BETWEEN",
+            "children" : [ {
+              "columnId" : 230488350,
+              "type" : "column"
+            }, {
+              "type" : "literal",
+              "value" : "2016-03-13T00:00:00"
+            }, {
+              "type" : "literal",
+              "value" : "2016-03-13T12:00:00"
+            } ],
+            "metadata" : {
+              "freeform" : true
+            }
+          } ],
+          "metadata" : {
+            "tableColumnId" : {
+              "244069" : 1563800
+            },
+            "operator" : "BETWEEN"
+          }
+        }, {
+          "type" : "operator",
+          "value" : "OR",
+          "metadata" : {
+            "customValues" : [ [ "Open" ], [ "Closed" ] ],
+            "tableColumnId" : {
+              "244069" : 1563802
+            },
+            "operator" : "EQUALS"
+          }
+        }, {
+          "type" : "operator",
+          "value" : "OR",
+          "metadata" : {
+            "customValues" : [ [ 1 ], [ 2 ], [ 3 ], [ 4 ], [ 5 ], [ 6 ], [ 7 ], [ 8 ], [ 9 ], [ 10 ], [ 11 ] ],
+            "tableColumnId" : {
+              "244069" : 1563807
+            },
+            "operator" : "EQUALS"
+          }
+        } ],
+        "metadata" : {
+          "unifiedVersion" : 2
+        }
+      },
+      "flags" : [ "unsaved" ]
+    }
+  },
+  "data" : [ [ 1635772, "79BEC084-DC0F-41F7-A2AA-3D682DEB5FCE", 1635772, 1458019171, "392873", 1458019171, "392873", null, "5660446", "2016-03-13T12:00:00", null, "2016-03-13T12:02:48", "Open", "Open", "DBI Building Inspection Queue", "General Requests", "building_inspection - building_inspection - request_for_service", "building_inspection - building_inspection - request_for_service", "3443 BALBOA ST, SAN FRANCISCO, CA, 94121", "1", "Outer Richmond", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.775532968331", "-122.495870003968", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635771, "F09336FC-A823-495A-8ADB-0FACF0F20C80", 1635771, 1458019171, "392873", 1458019171, "392873", null, "5660444", "2016-03-13T11:59:06", "2016-03-13T18:50:17", "2016-03-13T18:50:17", "Closed", "Case Resolved - done", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "2926 23RD ST, SAN FRANCISCO, CA, 94110", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.754421029596", "-122.410717092474", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5b870df86ba9da05666d6/report.jpg", null ] ]
+  , [ 1635770, "1A4D1233-A2EB-4AC5-A369-C962124ADFC3", 1635770, 1458019168, "392873", 1458019168, "392873", null, "5660443", "2016-03-13T11:58:18", null, "2016-03-13T11:59:23", "Open", "Open", "DPH - Environmental Health - G", "General Requests", "dph - environmental_health - request_for_service", "dph - environmental_health - request_for_service", "3446 BALBOA ST, SAN FRANCISCO, CA, 94121", "1", "Outer Richmond", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.775532968331", "-122.495870003968", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635769, "7894DEF9-BEDA-4BA5-84A4-E65E112D8860", 1635769, 1458019168, "392873", 1458019168, "392873", null, "5660440", "2016-03-13T11:57:40", null, "2016-03-13T11:59:52", "Open", "open", "PUC Sewer Ops", "Sewer Issues", "Sewage_back_up", "Outofsewervent4inch", "1231 26TH AVE, SAN FRANCISCO, CA, 94122", "4", "Outer Sunset", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.764449411736", "-122.484850708052", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635768, "AB8C4694-F7A0-43EB-9BF9-60029A56658D", 1635768, 1458019168, "392873", 1458019168, "392873", null, "5660439", "2016-03-13T11:57:22", "2016-03-13T19:22:06", "2016-03-13T19:22:06", "Closed", "Case Resolved - 10-98", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of SILVER AVE and MERRILL ST", "9", "Portola", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7314280591781", "-122.408914329547", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635767, "FC4A2473-23BC-4C64-8743-16E5DDC0E2EE", 1635767, 1458019168, "392873", 1458019168, "392873", null, "5660431", "2016-03-13T11:55:09", null, "2016-03-13T11:57:55", "Open", "Open", "DBI Building Inspection Queue", "General Requests", "building_inspection - building_inspection - request_for_service", "building_inspection - building_inspection - request_for_service", "3446 BALBOA ST, SAN FRANCISCO, CA, 94121", "1", "Outer Richmond", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.775532968331", "-122.495870003968", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635766, "B5DD126B-575C-4FD6-B4AB-FBAC8B8F2E13", 1635766, 1458019168, "392873", 1458019168, "392873", null, "5660430", "2016-03-13T11:55:03", "2016-03-13T12:17:00", "2016-03-13T12:17:00", "Closed", "Case Resolved - Pickup completed.", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Illegal Encampment", "Carts", "Intersection of UNIVERSITY ST and WOOLSEY ST", "9", "McLaren Park", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7226585215647", "-122.412468260932", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635765, "F220A952-CF19-49F7-B969-505E967C3811", 1635765, 1458019168, "392873", 1458147719, "392873", null, "5660429", "2016-03-13T11:54:26", null, "2016-03-15T09:00:16", "Open", "Open", "DPT Abandoned Vehicles Work Queue", "Abandoned Vehicle", "Abandoned Vehicle - SUV", "white - Dodge - van(camper) - 3lxy721", "Intersection of 10TH AVE and QUINTARA ST", "7", "Forest Hill", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7490745569361", "-122.46633644305", null, false ], "Web Self Service", [ null, null ] ]
+  , [ 1635764, "2BF6ECC5-8B1D-457C-A519-21C624814032", 1635764, 1458019168, "392873", 1458147719, "392873", null, "5660426", "2016-03-13T11:53:08", "2016-03-15T02:03:58", "2016-03-15T02:03:58", "Closed", "Case Resolved - 1098", "DPW Ops Queue", "Street and Sidewalk Cleaning", "Hazardous Materials", "Human Waste", "Intersection of MASONIC AVE and HAIGHT ST", "5", "Haight Ashbury", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7702101326969", "-122.445345107431", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635763, "B84A477F-B115-4E73-B212-B8B7025242C4", 1635763, 1458019168, "392873", 1458147719, "392873", null, "5660425", "2016-03-13T11:53:07", null, "2016-03-14T13:31:08", "Open", "Open", "DPT Abandoned Vehicles Work Queue", "Abandoned Vehicle", "Abandoned Vehicle - Car4door", "Silver - Nissan - Senta - 3VDZ356", "741 ATHENS ST, SAN FRANCISCO, CA, 94112", "11", "Excelsior", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.716292222065", "-122.432283999946", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635762, "4A832032-DC4B-414E-8ACD-970DD01A4E30", 1635762, 1458019168, "392873", 1458019168, "392873", null, "5660424", "2016-03-13T11:52:54", "2016-03-13T14:01:24", "2016-03-13T14:01:24", "Closed", "Case Resolved - Pickup completed", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Boxed or Bagged Items", "Intersection of UNIVERSITY ST and BURROWS ST", "9", "University Mound", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.726516643043", "-122.414071950374", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635761, "D8E4A4A4-C601-4D76-BB70-8947868B9A80", 1635761, 1458019168, "392873", 1458019168, "392873", null, "5660422", "2016-03-13T11:52:40", null, "2016-03-13T11:52:40", "Open", "open", "DPW Ops Queue", "Graffiti Private Property", "Not_Offensive Graffiti on Private Property", "Building_commercial - Not_Offensive", "Intersection of 16TH ST and VALENCIA ST", "8", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7649173279987", "-122.421886343791", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5b6eddf86ba9da05666cb/report.jpg", null ] ]
+  , [ 1635760, "793E30DD-1D37-400C-92E6-2FFCA6B0968B", 1635760, 1458019168, "392873", 1458147719, "392873", null, "5660417", "2016-03-13T11:51:36", "2016-03-15T07:27:58", "2016-03-15T07:27:58", "Closed", "Case Resolved - 455 VALENCIA ST HAS ALREADY BEEN POSTED FOR THE GRAFFITI. DS 3.15", "DPW Ops Queue", "Graffiti Private Property", "Not_Offensive Graffiti on Private Property", "Building_commercial - Not_Offensive", "Intersection of SPARROW ST and VALENCIA ST", "8", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7657206316265", "-122.421964221595", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5b6afdf86ba9da05666c1/report.jpg", null ] ]
+  , [ 1635759, "5FD8BE3C-062E-42DC-B92E-864F4C9BEB54", 1635759, 1458019168, "392873", 1458147719, "392873", null, "5660415", "2016-03-13T11:50:52", "2016-03-15T07:27:58", "2016-03-15T07:27:58", "Closed", "Case Resolved - 455 VALENCIA ST HAS ALREADY BEEN POSTED FOR THE GRAFFITI. DS 3.15", "DPW Ops Queue", "Graffiti Private Property", "Not_Offensive Graffiti on Private Property", "Building_commercial - Not_Offensive", "Intersection of SPARROW ST and VALENCIA ST", "8", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7657206316265", "-122.421964221595", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5b685df86ba9da05666b7/report.jpg", null ] ]
+  , [ 1635758, "2DF4230F-648C-4149-B79E-A0A5CC86865F", 1635758, 1458019168, "392873", 1458019168, "392873", null, "5660414", "2016-03-13T11:50:39", null, "2016-03-13T13:10:11", "Open", "open", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of 14TH AVE and BALBOA ST", "1", "Inner Richmond", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7768439704111", "-122.472571556038", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5b677df86ba9da05666ab/1457894871597.jpg", null ] ]
+  , [ 1635757, "74EAD4F5-B0EE-444A-9AA9-86FCF7AF9406", 1635757, 1458019168, "392873", 1458147719, "392873", null, "5660413", "2016-03-13T11:50:04", null, "2016-03-15T15:28:12", "Open", "open", "DPT Paint Shop Queue", "Graffiti Private Property", "Not_Offensive Graffiti on Private Property", "Sidewalk_in_front_of_property - Not_Offensive", "423 VALENCIA ST, SAN FRANCISCO, CA, 94103", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.766121611152", "-122.421820575394", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5b656df86ba9da05666a1/report.jpg", null ] ]
+  , [ 1635756, "EB6EE2EC-2A76-4729-A827-8144760123EE", 1635756, 1458019168, "392873", 1458147719, "392873", null, "5660412", "2016-03-13T11:49:20", null, "2016-03-14T01:00:00", "Open", "open", "DPW Ops Queue", "Graffiti Public Property", "Not_Offensive Graffiti on Public Property", "City_receptacle - Not_Offensive", "395 VALENCIA ST, SAN FRANCISCO, CA, 94103", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.766630274855", "-122.421983224931", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5b628df86ba9da0566697/report.jpg", null ] ]
+  , [ 1635755, "B92485B5-92AE-47CA-A43A-1AC1357BAD7F", 1635755, 1458019168, "392873", 1458019168, "392873", null, "5660410", "2016-03-13T11:48:20", "2016-03-13T18:49:59", "2016-03-13T18:49:59", "Closed", "Case Resolved - done", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of 15TH ST and JULIAN AVE", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7665993360598", "-122.421056485527", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5b5ecdf86ba9da056668d/report.jpg", null ] ]
+  , [ 1635754, "EF08B33F-5FD0-45CB-AA5B-EABCB9634097", 1635754, 1458019168, "392873", 1458019168, "392873", null, "5660409", "2016-03-13T11:48:09", "2016-03-13T12:27:00", "2016-03-13T12:27:00", "Closed", "Case Resolved -", "DPW BUF Queue", "Tree Maintenance", "Trees - Damaged_Tree", "About_to_fall", "Intersection of 1ST ST and LANSING ST", "6", "Rincon Hill", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.786472455743", "-122.393444832565", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635753, "FC7BDFA9-CFEA-4D75-B587-5AD790BFAED5", 1635753, 1458019168, "392873", 1458019168, "392873", null, "5660408", "2016-03-13T11:47:56", "2016-03-13T18:51:33", "2016-03-13T18:51:33", "Closed", "Case Resolved - done", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of 15TH ST and JULIAN AVE", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7665993360598", "-122.421056485527", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5b5d3df86ba9da0566683/report.jpg", null ] ]
+  , [ 1635752, "A71A52C3-A015-4A20-9AAC-DC6D97F4FAB5", 1635752, 1458019168, "392873", 1458019168, "392873", null, "5660406", "2016-03-13T11:45:13", "2016-03-13T12:28:00", "2016-03-13T12:28:00", "Closed", "Case Resolved -", "DPW Ops Queue", "Graffiti Public Property", "Not_Offensive Graffiti on Public Property", "Pole - Not_Offensive", "2799 24TH ST, SAN FRANCISCO, CA, 94110", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.752743832193", "-122.408025457922", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5b528df86ba9da056666c/report.jpg", null ] ]
+  , [ 1635751, "D54CEA4D-1427-4229-AA81-DFED9DB3AD5D", 1635751, 1458019168, "392873", 1458019168, "392873", null, "5660405", "2016-03-13T11:45:06", "2016-03-13T18:48:52", "2016-03-13T18:48:52", "Closed", "Case Resolved - done", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "1845 MISSION ST, SAN FRANCISCO, CA, 94103", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.767613812003", "-122.419734207768", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5b529df86ba9da0566672/report.jpg", null ] ]
+  , [ 1635750, "CD6A53D5-A5E7-4192-BAD0-48500B8D9BA4", 1635750, 1458019168, "392873", 1458147719, "392873", null, "5660402", "2016-03-13T11:42:05", "2016-03-14T12:39:27", "2016-03-14T12:39:27", "Closed", "Case Resolved - Field Work has been completed.       Add'l Notes:     ck lower lateral trap down 8',flushed and enzimed,heard hose in m/h,flat line,surhage?m/s o.k. inside problem?", "PUC Sewer Ops", "Sewer Issues", "Sewage_back_up", "Outofsewervent4inch", "33 JOOST AVE, SAN FRANCISCO, CA, 94131", "7", "Sunnyside", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.732257208649", "-122.435905463713", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635749, "2C5A438E-8CFE-4B63-896A-9EA7E7AD7354", 1635749, 1458019168, "392873", 1458147719, "392873", null, "5660389", "2016-03-13T11:34:56", "2016-03-15T01:48:23", "2016-03-15T01:48:23", "Closed", "Cancelled -", "DPW Ops Queue", "Tree Maintenance", "Trees - Damaged_Tree", "Fallen_tree", "Intersection of PERSIA AVE and NAPLES ST", "11", "Excelsior", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7208554877297", "-122.431204865733", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635748, "BB257C8B-247F-4E46-B8BB-4B3BD2DA536D", 1635748, 1458019168, "392873", 1458019168, "392873", null, "5660388", "2016-03-13T11:32:26", "2016-03-13T11:56:00", "2016-03-13T11:56:00", "Closed", "Case Resolved -", "DPW Ops Queue", "Sewer Issues", "Flooding", "On_street", "Intersection of 18TH ST and HARTFORD ST", "8", "Castro", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7609547292425", "-122.433903624298", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5b231df86ba9da056665e/report.jpg", null ] ]
+  , [ 1635747, "90466AA7-3699-49EA-B0E7-D461EB930599", 1635747, 1458019168, "392873", 1458019168, "392873", null, "5660382", "2016-03-13T11:29:27", null, "2016-03-13T11:29:27", "Open", "open", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "268 ALABAMA ST, SAN FRANCISCO, CA, 94103", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.766253915935", "-122.412683298059", null, false ], "Open311", [ null, null ] ]
+  , [ 1635746, "A09E9BF5-AF41-448F-95D7-5D67815B7FAB", 1635746, 1458019168, "392873", 1458019168, "392873", null, "5660379", "2016-03-13T11:28:14", null, "2016-03-13T11:30:36", "Open", "open", "DPW Ops Queue", "Street and Sidewalk Cleaning", "Hazardous Materials", "Human Waste", "95 HARRINGTON ST, SAN FRANCISCO, CA, 94112", "11", "Mission Terrace", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.725817214123", "-122.436257486422", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635745, "A00C962D-54B9-4DE0-958C-7178A269D6AD", 1635745, 1458019168, "392873", 1458147719, "392873", null, "5660377", "2016-03-13T11:27:13", null, "2016-03-14T13:31:09", "Open", "Open", "DPT Abandoned Vehicles Work Queue", "Abandoned Vehicle", "Abandoned Vehicle - PickupTruck", "BLACK - Toyota - TACOMA - 6Y96839", "Intersection of FLOOD AVE and PHELAN AVE", "7", "Westwood Park", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7298664948358", "-122.452442030523", null, false ], "Web Self Service", [ null, null ] ]
+  , [ 1635744, "019794F9-3C37-4201-83AA-D446817542F3", 1635744, 1458019168, "392873", 1458147719, "392873", null, "5660376", "2016-03-13T11:24:41", "2016-03-15T10:22:33", "2016-03-15T10:22:33", "Closed", "Case is Invalid - Please forward to the Mayors Office of Housing.  Thank you", "Real Estate Department - G", "General Requests", "real_estate_department - real_estate_department - mailing_request", "real_estate_department - real_estate_department - mailing_request", "Not associated with a specific address", "0", null, [ null, null, null, null, null ], "Web Self Service", [ null, null ] ]
+  , [ 1635743, "68602AC3-8055-4B64-8E26-9D9DC7D86DA9", 1635743, 1458019168, "392873", 1458019168, "392873", null, "5660373", "2016-03-13T11:23:28", "2016-03-13T12:09:25", "2016-03-13T12:09:25", "Closed", "Case Resolved - Pickup completed.", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Refrigerator", "Intersection of FILLMORE ST and BEACH ST", "2", "Marina", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.8043591742591", "-122.437045690555", null, false ], "Integrated Agency", [ null, null ] ]
+  , [ 1635742, "EABF0F00-F019-4AE0-817B-570D833A1F17", 1635742, 1458019168, "392873", 1458147719, "392873", null, "5660372", "2016-03-13T11:23:27", "2016-03-14T21:35:34", "2016-03-14T21:35:34", "Closed", "Case Resolved - Field Work has been completed.", "PUC - Sewer - G", "General Requests", "puc - sewer - request_for_service", "puc - sewer - request_for_service", "Intersection of AMAZON AVE and LONDON ST", "11", "Excelsior", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7169585104913", "-122.439640356443", null, false ], "Integrated Agency", [ null, null ] ]
+  , [ 1635741, "41D5F30A-A367-433C-83CE-29EB51050B07", 1635741, 1458019168, "392873", 1458019168, "392873", null, "5660371", "2016-03-13T11:23:25", null, "2016-03-13T11:23:25", "Open", "accepted", "DPW Ops Queue", "Graffiti Private Property", "Not_Offensive Graffiti on Private Property", "Building_other - Not_Offensive", "Not associated with a specific address", "0", null, [ null, null, null, null, null ], "Integrated Agency", [ null, null ] ]
+  , [ 1635740, "25CC4200-6969-4DC9-91D3-1F855D84C576", 1635740, 1458019168, "392873", 1458147719, "392873", null, "5660370", "2016-03-13T11:22:55", "2016-03-15T21:44:25", "2016-03-15T21:44:25", "Closed", "Case Resolved - Field Work has been completed.       Add'l Notes:     RELIVE 3 CB", "PUC Sewer Ops", "Sewer Issues", "Flooding", "On_street", "Intersection of PINE ST and GOUGH ST", "2", null, [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7889945860505", "-122.425422891336", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635739, "E6D3EE64-3F77-4921-B2AC-1CFD5086E3CC", 1635739, 1458019168, "392873", 1458019168, "392873", null, "5660364", "2016-03-13T11:20:29", null, "2016-03-13T11:43:48", "Open", "Open", "311 Service Request Queue - Hold", "311 External Request", "Utility Lines/Wires", null, "Intersection of OCTAVIA ST and HAIGHT ST", "5", "Lower Haight", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7729572467144", "-122.42375822927", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635738, "4E5EF86A-6273-49D2-8C13-BED46BC180BC", 1635738, 1458019168, "392873", 1458019168, "392873", null, "5660363", "2016-03-13T11:20:13", null, "2016-03-13T11:22:40", "Open", "open", "DPW BSSR Queue", "Street Defects", "Pavement_Defect", "Pavement_Defect", "Intersection of SUNSET BLVD and NORIEGA ST", "4", "Outer Sunset", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7534137381672", "-122.495226479245", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635737, "B276EEBB-9ADF-4756-9307-D8C88FC6704B", 1635737, 1458019168, "392873", 1458147719, "392873", null, "5660362", "2016-03-13T11:19:56", "2016-03-15T10:53:47", "2016-03-16T00:12:40", "Closed", "Case Resolved - Called SFPD for Homeless Assistance CAD # 160751296", "DPW Ops Queue", "General Requests", "homeless_concerns - wellbeing_check - request_for_service", "homeless_concerns - wellbeing_check - request_for_service", "Intersection of 14TH ST and WOODWARD ST", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7682256768311", "-122.420776732842", null, false ], "Open311", [ null, null ] ]
+  , [ 1635736, "6800008A-981A-4676-883C-F9BF619492FB", 1635736, 1458019168, "392873", 1458147719, "392873", null, "5660358", "2016-03-13T11:14:06", "2016-03-14T21:46:37", "2016-03-14T21:46:37", "Closed", "Case Resolved - Field Work has been completed.       Add'l Notes:     relive 4 cb", "PUC Sewer Ops", "Catch Basin Maintenance", "Maintenance", "Maintenance", "Intersection of DOLORES ST and 27TH ST", "8", "Noe Valley", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7470333079711", "-122.424689751603", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635735, "5ACE8913-8BB9-41CF-8505-B7ED4F322C9F", 1635735, 1458019168, "392873", 1458019168, "392873", null, "5660354", "2016-03-13T11:12:26", null, "2016-03-13T11:52:46", "Open", "open", "DPW Ops Queue", "Tree Maintenance", "Trees - Damaged_Tree", "Hanging_limb", "149 FILLMORE ST, SAN FRANCISCO, CA, 94117", "5", "Duboce Triangle", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.770972770004", "-122.430358428632", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635734, "6C2BACAF-F9D4-499E-A0BB-E3763286F15E", 1635734, 1458019168, "392873", 1458019168, "392873", null, "5660347", "2016-03-13T11:09:38", "2016-03-13T18:02:33", "2016-03-13T18:02:33", "Closed", "Case Resolved - Pickup completed", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Refrigerator", "341 NOE ST, SAN FRANCISCO, CA, 94114", "8", "Castro", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.763489538433", "-122.432846718624", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5acd8df86ba9da0566634/report.jpg", null ] ]
+  , [ 1635733, "1AFCB027-3EF3-418A-814A-102F707138F3", 1635733, 1458019168, "392873", 1458147719, "392873", null, "5660346", "2016-03-13T11:09:33", "2016-03-15T09:35:14", "2016-03-15T09:35:14", "Closed", "Case Resolved - 10/98", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "396 12TH ST, SAN FRANCISCO, CA, 94103", "6", "South of Market", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.770034720292", "-122.413383130892", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5acd2df86ba9da0566628/report.jpg", null ] ]
+  , [ 1635732, "B6C39B7F-687E-4300-95BA-620C6A7B0896", 1635732, 1458019168, "392873", 1458019168, "392873", null, "5660343", "2016-03-13T11:08:31", "2016-03-13T18:49:31", "2016-03-13T18:49:31", "Closed", "Case Resolved - Outreach and Enforcement Incident created.", "DPW - Bureau of Street Environmental Services - G", "General Requests", "dpw - bses - customer_callback", "dpw - bses - customer_callback", "493 3RD ST, SAN FRANCISCO, CA, 94107", "6", "South of Market", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.781650358008", "-122.395842476007", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635731, "90C8B5EB-9909-4C06-B382-6057150FEB09", 1635731, 1458019168, "392873", 1458019168, "392873", null, "5660342", "2016-03-13T11:08:08", "2016-03-13T12:01:51", "2016-03-13T12:01:51", "Closed", "Case Resolved - Field Work has been completed.       Add'l Notes:     failed trench failed trench. plates have shifted. needs attention asap from bssr. trench is failing under plates. refered back to dpw bssr. made as safe as possible", "PUC - Sewer - G", "General Requests", "puc - sewer - request_for_service", "puc - sewer - request_for_service", "Intersection of BEALE ST and MISSION ST", "6", "Financial District", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7911527362389", "-122.395813399512", null, false ], "Integrated Agency", [ null, null ] ]
+  , [ 1635730, "718CFC86-723C-47DD-A47C-4B18C7C7B977", 1635730, 1458019168, "392873", 1458147719, "392873", null, "5660336", "2016-03-13T11:06:21", "2016-03-14T09:01:24", "2016-03-14T09:01:24", "Closed", "Case Resolved - 1098", "DPW Ops Queue", "Sewer Issues", "Flooding", "On_street", "Intersection of 24TH AVE and JUDAH ST", "4", "Outer Sunset", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7614645142546", "-122.482352108939", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5ac14df86ba9da0566610/report.jpg", null ] ]
+  , [ 1635729, "886C71B3-3F8A-405A-B88E-AED8820B3D18", 1635729, 1458019168, "392873", 1458019168, "392873", null, "5660335", "2016-03-13T11:05:39", null, "2016-03-13T11:10:50", "Open", "Open", "Housing Authority SR Queue", "SFHA Requests", "SFHA Priority - Emergency", "Carpenters", "1845 25TH ST, SAN FRANCISCO, CA, 94107", "10", "Potrero Hill", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7516903408", "-122.397430402396", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635728, "B1A2C3B1-90BA-4E88-9718-BC06FA27CA34", 1635728, 1458019168, "392873", 1458019168, "392873", null, "5660331", "2016-03-13T11:03:11", null, "2016-03-13T11:05:48", "Open", "open", "DPW Ops Queue", "Tree Maintenance", "Trees - Damaged_Tree", "Hanging_limb", "100 SERRANO DR, SAN FRANCISCO, CA, 94132", "7", "Parkmerced", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.720251441929", "-122.478015179565", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635727, "4F3B63A0-4C27-4E59-A30E-7BFE5F26FF37", 1635727, 1458019168, "392873", 1458147719, "392873", null, "5660322", "2016-03-13T10:56:53", "2016-03-14T15:51:00", "2016-03-14T15:51:00", "Closed", "Case Resolved - 10-98", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "493 BROADWAY, SAN FRANCISCO, CA, 94133", "3", "North Beach", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.79787434341", "-122.4052232463", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5a9dbdf86ba9da0566602/report.jpg", null ] ]
+  , [ 1635726, "B9536CEB-21EC-4347-AC32-C8E16E3C704B", 1635726, 1458019168, "392873", 1458019168, "392873", null, "5660321", "2016-03-13T10:56:04", "2016-03-13T11:07:38", "2016-03-13T11:07:38", "Closed", "Case Resolved - scheduled on comming route", "Recology_Overflowing", "Street and Sidewalk Cleaning", "City_garbage_can_overflowing", "City_garbage_can_overflowing", "401 BROADWAY, SAN FRANCISCO, CA, 94133", "3", "North Beach", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.798056041875", "-122.404029515584", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5a9aadf86ba9da05665f6/report.jpg", null ] ]
+  , [ 1635725, "711C8631-D5F3-43A0-9997-28A6BA829705", 1635725, 1458019168, "392873", 1458019168, "392873", null, "5660319", "2016-03-13T10:54:59", null, "2016-03-13T13:42:05", "Open", "open", "PUC Sewer Ops", "Catch Basin Maintenance", "Maintenance", "Maintenance", "95 LINARES AVE, SAN FRANCISCO, CA, 94116", "7", "Forest Hill", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.751511982494", "-122.462728417536", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635724, "53BE6562-06B1-466D-8991-D437CC21EF3F", 1635724, 1458019168, "392873", 1458019168, "392873", null, "5660314", "2016-03-13T10:53:05", null, "2016-03-13T10:58:08", "Open", "Open", "Housing Authority SR Queue", "SFHA Requests", "SFHA Priority - Routine", "Steam Fitters", "1012 FITZGERALD AVE, SAN FRANCISCO, CA, 94124", "10", "Bret Harte", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.719589023671", "-122.387287012701", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635723, "D3E13E3A-725A-46FA-B8DC-F61C6E72C9B6", 1635723, 1458019168, "392873", 1458147719, "392873", null, "5660307", "2016-03-13T10:50:50", "2016-03-14T15:35:15", "2016-03-14T15:35:15", "Closed", "Case Resolved - 10-98", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of KEARNY ST and NOTTINGHAM PL", "3", "North Beach", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7975444715056", "-122.40540908054", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5a871df86ba9da05665ea/report.jpg", null ] ]
+  , [ 1635722, "1D91EA14-EE89-4253-B587-3539CDCC5BF3", 1635722, 1458019168, "392873", 1458019168, "392873", null, "5660305", "2016-03-13T10:50:10", null, "2016-03-13T10:50:11", "Open", "open", "DPW BSSR Queue", "Street Defects", "Pavement_Defect", "Pavement_Defect", "Intersection of WILLARD ST NORTH and FULTON ST", "1", "Golden Gate Park", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7745546894295", "-122.45628356758", null, false ], "Web Self Service", [ null, null ] ]
+  , [ 1635721, "A99FAB11-017E-460F-90EA-F9111425F53B", 1635721, 1458019168, "392873", 1458019168, "392873", null, "5660303", "2016-03-13T10:48:37", "2016-03-13T12:18:49", "2016-03-13T12:18:49", "Closed", "Case Resolved - Pickup completed.", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Furniture", "765 CAPP ST, SAN FRANCISCO, CA, 94110", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.754476154427", "-122.417491439171", null, false ], "Open311", [ null, null ] ]
+  , [ 1635720, "69DF4DED-DFB6-478E-BE1E-5A57A5D17FA4", 1635720, 1458019168, "392873", 1458019168, "392873", null, "5660302", "2016-03-13T10:48:34", "2016-03-13T10:56:17", "2016-03-13T10:56:17", "Closed", "Case Resolved - SFPD notified", "DPW Ops Queue", "Street and Sidewalk Cleaning", "Illegal Encampment", "Encampment Cleanup", "3228 18TH ST, SAN FRANCISCO, CA, 94110", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.762170859921", "-122.415635694213", null, false ], "Open311", [ null, null ] ]
+  , [ 1635719, "19101520-990A-4A11-A060-D3E9F648CA0B", 1635719, 1458019168, "392873", 1458147719, "392873", null, "5660301", "2016-03-13T10:47:50", null, "2016-03-14T05:54:09", "Open", "open", "DPW Ops Queue", "Street and Sidewalk Cleaning", "Illegal Encampment", "Encampment Cleanup", "Intersection of 15TH ST and 8TH ST", "10", "Showplace Square", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7674882298671", "-122.400877072158", null, false ], "Open311", [ null, null ] ]
+  , [ 1635718, "44F60829-C0CB-45A8-9443-6E68B9F96C5F", 1635718, 1458019168, "392873", 1458147719, "392873", null, "5660300", "2016-03-13T10:47:14", "2016-03-14T15:52:47", "2016-03-14T15:52:47", "Closed", "Case Resolved - 10-98", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of FILBERT ST and BOB KAUFMAN ALY", "3", "Telegraph Hill", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.8016115830314", "-122.407461473142", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635717, "421AB43A-C2EB-4E8E-9C45-F5ADE8B50695", 1635717, 1458019168, "392873", 1458019168, "392873", null, "5660298", "2016-03-13T10:45:36", null, "2016-03-13T10:45:36", "Open", "Open", "HSA - Other - G", "General Requests", "human_services_agency - hsa_other - request_for_service", "human_services_agency - hsa_other - request_for_service", "Not associated with a specific address", "0", null, [ null, null, null, null, null ], "Web Self Service", [ null, null ] ]
+  , [ 1635716, "8F6A3964-D3E9-4685-862A-708140561790", 1635716, 1458019168, "392873", 1458019168, "392873", null, "5660296", "2016-03-13T10:44:10", "2016-03-13T10:56:59", "2016-03-13T10:56:59", "Closed", "Case Resolved - SFPD notified", "DPW Ops Queue", "Street and Sidewalk Cleaning", "Illegal Encampment", "Encampment Cleanup", "Intersection of BERRY ST and DE HARO ST", "10", "Showplace Square", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7690293790732", "-122.401992692209", null, false ], "Open311", [ null, null ] ]
+  , [ 1635715, "0E61E630-ABB2-4816-8985-2AEF386B0755", 1635715, 1458019168, "392873", 1458019168, "392873", null, "5660293", "2016-03-13T10:40:49", "2016-03-13T11:36:21", "2016-03-13T11:36:21", "Closed", "Case Resolved - Pickup completed.", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Boxed or Bagged Items", "Intersection of LARKIN ST and MYRTLE ST", "6", "Tenderloin", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7856416132462", "-122.417996186234", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5a619df86ba9da05665b1/report.jpg", null ] ]
+  , [ 1635714, "B3888459-7AB0-4018-A81C-B005FDF172C9", 1635714, 1458019168, "392873", 1458019168, "392873", null, "5660291", "2016-03-13T10:38:55", "2016-03-13T13:02:49", "2016-03-13T13:02:49", "Closed", "Case Resolved - Pickup completed", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Furniture", "Intersection of BREWSTER ST and MONTCALM ST", "9", "Peralta Heights", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7465950879447", "-122.406495693076", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5a5a6df86ba9da05665a5/photo_20160313_103655.jpg", null ] ]
+  , [ 1635713, "14EF16DB-A604-42DC-97AD-6DD34D9C870F", 1635713, 1458019168, "392873", 1458147719, "392873", null, "5660290", "2016-03-13T10:38:23", "2016-03-14T09:38:35", "2016-03-14T09:38:35", "Closed", "Case Resolved - talked to t/p", "Treasurer/Tax Collector - G", "General Requests", "tt_collector - tt_collector - customer_callback", "tt_collector - tt_collector - customer_callback", "Not associated with a specific address", "0", null, [ null, null, null, null, null ], "Web Self Service", [ null, null ] ]
+  , [ 1635712, "C713F890-E0DA-42F4-9115-1A36F9A47042", 1635712, 1458019168, "392873", 1458147719, "392873", null, "5660287", "2016-03-13T10:38:11", "2016-03-14T10:31:03", "2016-03-14T10:31:03", "Closed", "Case Resolved - Park manager has submitted a work order to repair the fallen windscreen; work is still pending.", "RPD Park Service Area 5 Queue", "Rec and Park Requests", "Park - Structural_Maintenance", "Other", "Glen Canyon Park, , SAN FRANCISCO, CA, 94131", "8", "Glen Park", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.740025371", "-122.4427319", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635711, "A4D03354-F085-441B-99F3-6370E16DC3F0", 1635711, 1458019168, "392873", 1458147719, "392873", null, "5660285", "2016-03-13T10:36:08", "2016-03-14T07:51:56", "2016-03-14T07:51:56", "Closed", "Case Resolved -", "DPT Signal Queue", "Damaged Property", "Damaged Traffic_Signal", "Traffic_Signal", "Intersection of CONGO ST and ELK ST", "8", "Glen Park", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7348569251046", "-122.439934233022", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635710, "053D71C9-7FC9-4EA2-9D9A-9842B5E0A42F", 1635710, 1458019168, "392873", 1458147719, "392873", null, "5660282", "2016-03-13T10:33:26", "2016-03-15T09:36:38", "2016-03-15T09:36:38", "Closed", "Case Resolved - 10/98", "DPW Ops Queue", "Street and Sidewalk Cleaning", "Hazardous Materials", "Needles", "Intersection of GRACE ST and MISSION ST", "6", "South of Market", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7756073210432", "-122.41548483469", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635709, "A396BD62-874C-432A-91F2-99EFBD206F33", 1635709, 1458019168, "392873", 1458147719, "392873", null, "5660280", "2016-03-13T10:32:36", "2016-03-14T14:19:19", "2016-03-14T14:19:19", "Closed", "Case Resolved - 10-98", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of GRANT AVE and SUTTER ST", "3", "Downtown / Union Square", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7896316472828", "-122.405398840292", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5a426df86ba9da0566597/report.jpg", null ] ]
+  , [ 1635708, "5A810FD4-98C0-4FE7-A675-1D3484A73EF2", 1635708, 1458019168, "392873", 1458019168, "392873", null, "5660279", "2016-03-13T10:32:12", "2016-03-13T13:27:00", "2016-03-13T13:27:00", "Closed", "Case Resolved - Pickup completed", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Mattress", "252 BRIGHTON AVE, SAN FRANCISCO, CA, 94112", "7", "Ingleside", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.722815726913", "-122.454993303014", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5a411df86ba9da056658b/photo_20160313_103145.jpg", null ] ]
+  , [ 1635707, "212CF523-0829-4B3B-B6FB-8ADAA42D8FAF", 1635707, 1458019168, "392873", 1458147719, "392873", null, "5660278", "2016-03-13T10:31:04", "2016-03-14T08:28:31", "2016-03-14T08:28:31", "Closed", "Case Resolved - 1098", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of GRACE ST and MISSION ST", "6", "South of Market", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7756073210432", "-122.41548483469", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635706, "1D9F7641-4347-4180-80FB-07DF2AB46EE5", 1635706, 1458019168, "392873", 1458147719, "392873", null, "5660275", "2016-03-13T10:28:30", "2016-03-14T07:45:02", "2016-03-14T07:45:02", "Closed", "Case Resolved -", "311 Supervisor Queue", "Sewer Issues", "Odor", "From_other_location", "Intersection of BRODERICK ST and JACKSON ST", "2", "Pacific Heights", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7914181105016", "-122.442826930871", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5a338df86ba9da0566581/report.jpg", null ] ]
+  , [ 1635705, "D9409F9F-C1D4-4F3A-A36F-F6003F46022D", 1635705, 1458019168, "392873", 1458019168, "392873", null, "5660271", "2016-03-13T10:26:34", null, "2016-03-13T10:45:55", "Open", "Open", "RPD Natural Areas Queue", "Rec and Park Requests", "Park - Neighborhood_Services_Area", "Trash_Dumping", "O'Shaughnessy Hollow, , SAN FRANCISCO, CA, 94127", "7", "Miraloma Park", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.740169391", "-122.4448751", null, false ], "Open311", [ null, null ] ]
+  , [ 1635704, "312F0DF1-5F1F-4F8B-9CB6-A464B2364FF7", 1635704, 1458019168, "392873", 1458019168, "392873", null, "5660269", "2016-03-13T10:25:04", null, "2016-03-13T10:25:51", "Open", "Open", "US Postal Service Maintenance Queue", "Graffiti Public Property", "Not_Offensive Graffiti on Public Property", "Mail_box - Not_Offensive", "Intersection of WAWONA ST and 24TH AVE", "4", "Parkside", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.737218938864", "-122.480654828232", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635703, "B636EA6E-2A59-4196-9D8F-A53C9DD0379E", 1635703, 1458019168, "392873", 1458147719, "392873", null, "5660266", "2016-03-13T10:20:45", "2016-03-14T09:47:05", "2016-03-14T09:47:05", "Closed", "Case Resolved - Guillermo sent out an email on 3/14/16.", "County Clerk - G", "General Requests", "county_clerk - county_clerk - request_for_service", "county_clerk - county_clerk - request_for_service", "Not associated with a specific address", "0", null, [ null, null, null, null, null ], "Web Self Service", [ null, null ] ]
+  , [ 1635702, "D7D67501-11E1-4760-854D-A878AA5E92A1", 1635702, 1458019168, "392873", 1458019168, "392873", null, "5660264", "2016-03-13T10:19:38", null, "2016-03-13T10:19:38", "Open", "open", "DPW BSSR Queue", "Street Defects", "Pavement_Defect", "Pavement_Defect", "4639 CALIFORNIA ST, SAN FRANCISCO, CA, 94118", "1", "Inner Richmond", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.784544536019", "-122.467392876089", null, false ], "Open311", [ null, null ] ]
+  , [ 1635701, "85A162A9-1DCF-481D-99E0-BA450B241070", 1635701, 1458019168, "392873", 1458019168, "392873", null, "5660261", "2016-03-13T10:17:13", null, "2016-03-13T14:38:22", "Open", "Open", "PUC - Electric/Power - G", "311 External Request", "Damaged_Property", null, "Intersection of CONGO ST and CIRCULAR AVE", "7", "Sunnyside", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7293753075303", "-122.442006707595", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635700, "40A89905-8013-42A8-9512-1ACD4F1E4D9C", 1635700, 1458019168, "392873", 1458019168, "392873", null, "5660259", "2016-03-13T10:14:55", "2016-03-13T18:51:33", "2016-03-13T18:51:33", "Closed", "Case Resolved - Claimed by homeless", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "4082 18TH ST, SAN FRANCISCO, CA, 94114", "8", "Castro", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.760966284938", "-122.434629236728", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5a009df86ba9da056655e/report.jpg", null ] ]
+  , [ 1635699, "57718011-D788-4027-9B93-A5A1BA244A2E", 1635699, 1458019168, "392873", 1458019168, "392873", null, "5660257", "2016-03-13T10:13:08", "2016-03-13T10:28:43", "2016-03-13T10:28:43", "Closed", "Case Resolved - DUPLICATE SERVICE REQUEST;5660253", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Electronics", "Intersection of MONTEREY BLVD and DETROIT ST", "7", "Sunnyside", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7315182857536", "-122.444300122244", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635698, "A6305C02-9458-4F8E-9838-EEC0ACE8D1E4", 1635698, 1458019168, "392873", 1458019168, "392873", null, "5660253", "2016-03-13T10:12:14", "2016-03-13T13:03:32", "2016-03-13T13:03:32", "Closed", "Case Resolved - Pickup completed", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Furniture", "Intersection of MONTEREY BLVD and DETROIT ST", "7", "Sunnyside", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7315182857536", "-122.444300122244", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635697, "14246C16-5360-41EA-B785-41A59D575813", 1635697, 1458019168, "392873", 1458019168, "392873", null, "5660248", "2016-03-13T10:09:35", "2016-03-13T10:34:37", "2016-03-13T10:34:37", "Closed", "Unable To Locate - Police CAD# 160730857 assigned; Call Closed: 2016-03-13 10:34:37", "Police - Homeless Concerns Queue", "General Requests", "homeless_concerns - aggressive_behavior - request_for_service", "homeless_concerns - aggressive_behavior - request_for_service", "626 PACIFIC AVE, SAN FRANCISCO, CA, 94133", "3", "North Beach", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.797119540079", "-122.405518271273", null, false ], "Open311", [ null, null ] ]
+  , [ 1635696, "404B4299-5CF4-4011-8FCB-91318F57C9EB", 1635696, 1458019168, "392873", 1458147719, "392873", null, "5660247", "2016-03-13T10:09:30", "2016-03-14T14:17:14", "2016-03-14T14:17:14", "Closed", "Case Resolved - 10-98", "DPW Ops Queue", "Street and Sidewalk Cleaning", "Hazardous Materials", "Human Waste", "Intersection of MOULTON ST and FILLMORE ST", "2", "Union Street", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7994193633729", "-122.43596065875", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635695, "69BD6440-B994-46D3-B1D6-D07384998B6B", 1635695, 1458019168, "392873", 1458019168, "392873", null, "5660245", "2016-03-13T10:07:48", null, "2016-03-13T10:07:48", "Open", "accepted", "DPW Ops Queue", "Graffiti Private Property", "Not_Offensive Graffiti on Private Property", "Building_other - Not_Offensive", "3443 BALBOA ST, SAN FRANCISCO, CA, 94121", "1", "Outer Richmond", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.775532968331", "-122.495870003968", null, false ], "Integrated Agency", [ null, null ] ]
+  , [ 1635694, "85756905-E39C-4B70-8F08-E33E7C5B67E6", 1635694, 1458019168, "392873", 1458019168, "392873", null, "5660244", "2016-03-13T10:07:45", null, "2016-03-13T10:07:45", "Open", "accepted", "DPW Ops Queue", "Graffiti Private Property", "Not_Offensive Graffiti on Private Property", "Building_other - Not_Offensive", "1668 HAIGHT ST, SAN FRANCISCO, CA, 94117", "5", "Haight Ashbury", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.769869460943", "-122.44972124666", null, false ], "Integrated Agency", [ null, null ] ]
+  , [ 1635693, "C0D5EFAD-3356-40DB-86ED-D052FAF2626E", 1635693, 1458019168, "392873", 1458147719, "392873", null, "5660239", "2016-03-13T10:05:51", null, "2016-03-14T11:17:38", "Open", "Open", "DPT Abandoned Vehicles Work Queue", "Abandoned Vehicle", "Abandoned Vehicle -", "white -  -  - NONE", "959 MONTEREY BLVD, SAN FRANCISCO, CA, 94127", "7", "Westwood Park", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.730665162168", "-122.458021555461", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635692, "8DD6A531-2119-4035-8712-DBAEB2E4E09B", 1635692, 1458019168, "392873", 1458019168, "392873", null, "5660238", "2016-03-13T10:05:34", null, "2016-03-13T10:38:19", "Open", "open", "DPW Ops Queue", "Graffiti Private Property", "Not_Offensive Graffiti on Private Property", "Sidewalk_in_front_of_property - Not_Offensive", "199 ERIE ST, SAN FRANCISCO, CA, 94103", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.768917761915", "-122.419832902975", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e59dd6df86ba9da0566545/report.jpg", null ] ]
+  , [ 1635691, "A35D24AA-1D77-4227-A48C-DF2D410B6120", 1635691, 1458019168, "392873", 1458019168, "392873", null, "5660236", "2016-03-13T10:05:11", "2016-03-13T18:59:27", "2016-03-13T18:59:27", "Closed", "Case Resolved - done", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of ERIE ST and MISSION ST", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7690454018668", "-122.420032143074", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e59dc0df86ba9da056653b/report.jpg", null ] ]
+  , [ 1635690, "D188683F-DAFB-4E56-AA57-CE30351971DE", 1635690, 1458019168, "392873", 1458019168, "392873", null, "5660234", "2016-03-13T10:04:12", null, "2016-03-13T10:31:08", "Open", "Open", "Housing Authority SR Queue", "SFHA Requests", "SFHA Priority - Routine", "Plumbers", "1021 WISCONSIN ST, SAN FRANCISCO, CA, 94107", "10", "Potrero Hill", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.754523384777", "-122.398620320393", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635689, "DC7A5249-6681-4812-8C15-0DAB552ED570", 1635689, 1458019168, "392873", 1458019168, "392873", null, "5660227", "2016-03-13T09:54:56", null, "2016-03-13T09:56:36", "Open", "open", "DPW BSSR Queue", "Street Defects", "Pavement_Defect", "Pavement_Defect", "Intersection of SANSOME ST and LOMBARD ST", "3", "Telegraph Hill", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.8040301969468", "-122.403348760433", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635688, "DA1AA681-738F-4A16-A904-97B74873C47A", 1635688, 1458019168, "392873", 1458019168, "392873", null, "5660225", "2016-03-13T09:53:26", "2016-03-13T18:51:54", "2016-03-13T18:51:54", "Closed", "Case Resolved - done", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "2701 FOLSOM ST, SAN FRANCISCO, CA, 94110", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.753980359532", "-122.414036033345", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e59affdf86ba9da056652e/photo_20160313_095257.jpg", null ] ]
+  , [ 1635687, "9DB64021-5DEE-450C-B77E-C9B9EDC84383", 1635687, 1458019168, "392873", 1458019168, "392873", null, "5660222", "2016-03-13T09:52:42", "2016-03-13T11:13:44", "2016-03-13T11:13:44", "Closed", "Case Resolved - Pickup completed.", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Furniture", "2701 FOLSOM ST, SAN FRANCISCO, CA, 94110", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.753980359532", "-122.414036033345", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e59ad3df86ba9da0566524/photo_20160313_095213.jpg", null ] ]
+  , [ 1635686, "63419C25-5354-4D03-A6DC-D7C81FBD7E7A", 1635686, 1458019168, "392873", 1458019168, "392873", null, "5660221", "2016-03-13T09:52:03", "2016-03-13T18:49:58", "2016-03-13T18:49:58", "Closed", "Case Resolved - done", "DPW Ops Queue", "Street and Sidewalk Cleaning", "Hazardous Materials", "Human Waste", "Intersection of MANSELL ST and SOMERSET ST", "10", "Visitacion Valley", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7205087625359", "-122.405009427913", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e59aaedf86ba9da056651a/photo_20160313_095122.jpg", null ] ]
+  , [ 1635685, "AB8B99E1-A544-4B79-99BD-2F81ACDAD977", 1635685, 1458019168, "392873", 1458019168, "392873", null, "5660219", "2016-03-13T09:51:51", "2016-03-13T11:49:51", "2016-03-13T11:49:51", "Closed", "Case Resolved - Pickup completed.", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Boxed or Bagged Items", "Intersection of 22ND ST and NOE ST", "8", "Noe Valley", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7546277367778", "-122.43217754745", null, false ], "Open311", [ null, null ] ]
+  , [ 1635684, "6863B15A-5AB0-48B8-9C62-3DC56804B480", 1635684, 1458019168, "392873", 1458019168, "392873", null, "5660218", "2016-03-13T09:49:21", null, "2016-03-13T09:52:08", "Open", "Open", "Housing Authority SR Queue", "SFHA Requests", "SFHA Priority - Emergency", "Plumbers", "2698 CALIFORNIA ST, Apt 105, SAN FRANCISCO, CA, 94115", "2", "Pacific Heights", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.788442382584", "-122.438525088486", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635683, "2EB7BACE-85F4-4853-8486-628438B5B3A1", 1635683, 1458019168, "392873", 1458019168, "392873", null, "5660212", "2016-03-13T09:48:42", null, "2016-03-13T09:48:42", "Open", "Open", "Police Department Administration - G", "General Requests", "sfpd - sfpd - other", "sfpd - sfpd - other", "Not associated with a specific address", "0", null, [ null, null, null, null, null ], "Web Self Service", [ null, null ] ]
+  , [ 1635682, "A0B766BC-F4E3-4C5A-AD7C-67DF0E3ECD97", 1635682, 1458019168, "392873", 1458019168, "392873", null, "5660208", "2016-03-13T09:45:25", null, "2016-03-13T09:54:51", "Open", "Open", "Port Authority - G", "General Requests", "port_authority - port_authority - complaint", "port_authority - port_authority - complaint", "Not associated with a specific address", "0", null, [ null, null, null, null, null ], "Voice In", [ null, null ] ]
+  , [ 1635681, "C2653E3A-01C6-4BBF-95A1-122666062F1E", 1635681, 1458019168, "392873", 1458147719, "392873", null, "5660203", "2016-03-13T09:44:04", "2016-03-15T21:42:15", "2016-03-15T21:42:15", "Closed", "Case Resolved - Field Work has been completed.       Add'l Notes:     RLEIVE 1 CB", "PUC Sewer Ops", "Sewer Issues", "Flooding", "On_street", "Intersection of CLARENDON AVE and LAGUNA HONDA BLVD", "7", "Forest Hill", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7515034090962", "-122.461523700836", null, false ], "Open311", [ null, null ] ]
+  , [ 1635680, "C0F6A601-B822-4B00-B8AD-4A3A350BF255", 1635680, 1458019168, "392873", 1458147719, "392873", null, "5660201", "2016-03-13T09:43:51", null, "2016-03-14T06:51:45", "Open", "open", "DPW BSM Queue", "Street Defects", "Pavement_Defect", "Pavement_Defect", "400 UNIVERSITY ST, SAN FRANCISCO, CA, 94134", "9", "University Mound", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.724919534082", "-122.413539267858", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635679, "D9840D94-3064-4A8E-B65C-AD62D53CF6D4", 1635679, 1458019168, "392873", 1458147719, "392873", null, "5660200", "2016-03-13T09:43:35", "2016-03-14T07:06:48", "2016-03-14T07:06:48", "Closed", "Case is a Duplicate -", "311 Supervisor Queue", "Sign Repair", "Sign - Other", "Other - Other; support - OK", "Intersection of BOSWORTH ST and CONGO ST", "8", "Glen Park", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7348569251046", "-122.439934233022", null, false ], "Open311", [ null, null ] ]
+  , [ 1635678, "C685FAF3-7011-42A9-8B57-200E5219F9CB", 1635678, 1458019168, "392873", 1458019168, "392873", null, "5660195", "2016-03-13T09:42:01", "2016-03-13T11:49:52", "2016-03-13T11:49:52", "Closed", "Case Resolved - Pickup completed.", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Boxed or Bagged Items", "Intersection of UNIVERSITY ST and WOOLSEY ST", "9", "McLaren Park", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7226585215647", "-122.412468260932", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635677, "CE90BE7C-963C-4B9B-B061-911CE6606D47", 1635677, 1458019168, "392873", 1458019168, "392873", null, "5660194", "2016-03-13T09:41:53", null, "2016-03-13T09:41:53", "Open", "open", "DPW BSM Queue", "Sidewalk or Curb", "Sidewalk_Defect", "Collapsed_sidewalk", "1799 19TH AVE, SAN FRANCISCO, CA, 94122", "4", "Outer Sunset", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.754266602568", "-122.476518372576", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5984bdf86ba9da05664ed/report.jpg", null ] ]
+  , [ 1635676, "5E4C585A-6B72-452B-81F9-050ED72BEC5D", 1635676, 1458019168, "392873", 1458147719, "392873", null, "5660191", "2016-03-13T09:40:30", "2016-03-14T09:06:20", "2016-03-14T09:06:20", "Closed", "Case Resolved - 1098", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of 17TH ST and CLAYTON ST", "5", "Ashbury Heights", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7617813090188", "-122.446783489416", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635675, "EDEE95AA-C4BA-4B4A-9E14-DAFF354B35A8", 1635675, 1458019168, "392873", 1458019168, "392873", null, "5660188", "2016-03-13T09:38:41", "2016-03-13T18:57:15", "2016-03-13T18:57:15", "Closed", "Case Resolved - done", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of RICKARD ST and SAN BRUNO AVE", "9", "Portola", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7345210212143", "-122.406815781755", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635674, "3887E39F-A80F-45D3-91ED-3FDBDB8893D4", 1635674, 1458019168, "392873", 1458019168, "392873", null, "5660186", "2016-03-13T09:37:47", null, "2016-03-13T09:37:47", "Open", "open", "PUC - Sewer - G", "General Requests", "puc - sewer - request_for_service", "puc - sewer - request_for_service", "Intersection of BROAD ST and CAPITOL AVE", "11", "Oceanview", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7131721517056", "-122.459024320911", null, false ], "Integrated Agency", [ null, null ] ]
+  , [ 1635673, "605537BB-BC71-4535-AB14-FC4CBE93F44F", 1635673, 1458019168, "392873", 1458019168, "392873", null, "5660185", "2016-03-13T09:37:28", null, "2016-03-13T09:40:30", "Open", "open", "DPW BSSR Queue", "Street Defects", "Pavement_Defect", "Pavement_Defect", "1586 MARKET ST, SAN FRANCISCO, CA, 94102", "5", "Civic Center", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.774595972232", "-122.420538807655", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635672, "8E2C8727-08CC-4B4A-AF35-C4FB53C91DE0", 1635672, 1458019168, "392873", 1458019168, "392873", null, "5660184", "2016-03-13T09:37:15", "2016-03-13T18:59:47", "2016-03-13T18:59:47", "Closed", "Case Resolved - done", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of 14TH ST and JULIAN AVE", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7681993877703", "-122.421209982613", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e59731df86ba9da05664e2/report.jpg", null ] ]
+  , [ 1635671, "170B964D-AA23-49AE-89C0-489F856BDBD3", 1635671, 1458019168, "392873", 1458019168, "392873", null, "5660183", "2016-03-13T09:36:34", null, "2016-03-13T09:37:48", "Open", "open", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of MONTGOMERY ST and SACRAMENTO ST", "3", "Financial District", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7937798873094", "-122.40295724496", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635670, "FD3F837C-375C-4B83-B203-CE5649501AA0", 1635670, 1458019167, "392873", 1458019167, "392873", null, "5660182", "2016-03-13T09:36:20", "2016-03-13T18:58:33", "2016-03-13T18:58:33", "Closed", "Case Resolved - done", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of SILVER AVE and SAN BRUNO AVE", "9", "Portola", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7324386213429", "-122.405607495398", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635669, "0DAF4BAE-E38D-4B2C-98FE-C2AB37BCC43B", 1635669, 1458019167, "392873", 1458019167, "392873", null, "5660181", "2016-03-13T09:36:15", "2016-03-13T18:55:03", "2016-03-13T18:55:03", "Closed", "Case Resolved - done", "DPW Ops Queue", "Damaged Property", "Damaged Fire_Police_Callbox", "Fire_Police_Callbox", "Intersection of ERIE ST and MISSION ST", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7690454018668", "-122.420032143074", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e596f4df86ba9da05664d6/report.jpg", null ] ]
+  , [ 1635668, "544E5A80-F7E4-455F-A1B8-90CB724BC5B0", 1635668, 1458019167, "392873", 1458019167, "392873", null, "5660177", "2016-03-13T09:34:24", "2016-03-13T10:18:58", "2016-03-13T10:18:58", "Closed", "Case Resolved - Strart    Maura  Wayne  @ 10:00am-  operator  James Murphy  start  @10:45am&  Kerry Schndiler  @10:45am-  ending", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "4521 17TH ST, SAN FRANCISCO, CA, 94114", "8", "Eureka Valley", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.761545289449", "-122.445918587143", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635667, "D233EBCD-BB07-4DAF-946B-44D68CF91CBA", 1635667, 1458019167, "392873", 1458019167, "392873", null, "5660176", "2016-03-13T09:34:11", "2016-03-13T11:20:14", "2016-03-13T11:20:14", "Closed", "Case Resolved - city can driver on way to service", "Recology_Overflowing", "Street and Sidewalk Cleaning", "City_garbage_can_overflowing", "City_garbage_can_overflowing", "Intersection of SILVER AVE and SAN BRUNO AVE", "9", "Portola", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7324386213429", "-122.405607495398", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635666, "CEE5B70E-16F2-48C3-9253-EC00909F96FD", 1635666, 1458019167, "392873", 1458019167, "392873", null, "5660173", "2016-03-13T09:32:26", null, "2016-03-13T09:33:07", "Open", "Open", "MUNI Work Queue", "MUNI Feedback", "MUNI - Conduct_Inattentiveness_Negligence", "201_Pass_Up_Did_Not_Wait_for_Transferee", "Intersection of DIAMOND HEIGHTS BLVD and DIAMOND ST", "8", "Glen Park", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7382878362001", "-122.437398085622", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635665, "55D615AD-6AE7-49EE-9A97-33619388B312", 1635665, 1458019167, "392873", 1458019167, "392873", null, "5660172", "2016-03-13T09:31:51", "2016-03-13T18:55:31", "2016-03-13T18:55:31", "Closed", "Case Resolved - done", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of SILVER AVE and SAN BRUNO AVE", "9", "Portola", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7324386213429", "-122.405607495398", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635664, "FCD65DBB-B720-45DB-9A6D-70E7EF45F074", 1635664, 1458019167, "392873", 1458019167, "392873", null, "5660171", "2016-03-13T09:31:37", "2016-03-13T09:38:41", "2016-03-13T09:38:41", "Closed", "Case Resolved - Customer should call PD", "PUC - Water - G", "Sewer Issues", "Water_leak", "Other", "350 ROOSEVELT WAY, SAN FRANCISCO, CA, 94114", "8", "Buena Vista", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.765340328366", "-122.44217006288", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635663, "45650D2E-A432-4A55-AAB2-ED8FCA07C1D6", 1635663, 1458019167, "392873", 1458019167, "392873", null, "5660165", "2016-03-13T09:28:55", "2016-03-13T18:52:30", "2016-03-13T18:52:30", "Closed", "Case Resolved - done", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of HALE ST and SAN BRUNO AVE", "9", "Portola", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7329633454163", "-122.405909406972", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635662, "67171D5E-6673-4725-99CD-DDA65AF08B55", 1635662, 1458019167, "392873", 1458019167, "392873", null, "5660149", "2016-03-13T09:22:50", "2016-03-13T18:57:15", "2016-03-13T18:57:15", "Closed", "Case Resolved - made safe", "DPW Ops Queue", "Tree Maintenance", "Trees - Damaged_Tree", "Fallen_tree", "233 BENNINGTON ST, SAN FRANCISCO, CA, 94110", "9", "Holly Park", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.737922512636", "-122.417846538294", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635661, "2A484AB7-05F0-4E26-8FA4-43C6FA753A34", 1635661, 1458019167, "392873", 1458019167, "392873", null, "5660148", "2016-03-13T09:22:37", null, "2016-03-13T09:25:00", "Open", "Open", "MUNI Work Queue", "MUNI Feedback", "MUNI - Commendation", "401_Employee_Commendation", "Not associated with a specific address", "0", null, [ null, null, null, null, null ], "Voice In", [ null, null ] ]
+  , [ 1635660, "5670A461-F127-402F-A723-AAC002204E70", 1635660, 1458019167, "392873", 1458147715, "392873", null, "5660142", "2016-03-13T09:18:14", "2016-03-14T08:55:55", "2016-03-14T08:55:55", "Closed", "Case Resolved - 1098", "DPW Ops Queue", "Street and Sidewalk Cleaning", "Hazardous Materials", "Glass", "Intersection of 29TH AVE and ORTEGA ST", "4", "Outer Sunset", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.751903378891", "-122.487052952285", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635659, "16984166-01D7-47C3-894B-4F30F9642328", 1635659, 1458019167, "392873", 1458019167, "392873", null, "5660139", "2016-03-13T09:17:39", "2016-03-13T11:04:05", "2016-03-13T11:04:05", "Closed", "Case Resolved - dispatched on comming route to svc can", "Recology_Overflowing", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of LARKIN ST and OFARRELL ST", "6", "Tenderloin", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.785167113148", "-122.417901555792", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e5929bdf86ba9da05664c7/report.jpg", null ] ]
+  , [ 1635658, "545567A7-A98F-4606-90EF-D18B517E9819", 1635658, 1458019167, "392873", 1458019167, "392873", null, "5660138", "2016-03-13T09:15:21", null, "2016-03-13T09:17:09", "Open", "open", "DPW Ops Queue", "Tree Maintenance", "Trees - Damaged_Tree", "About_to_fall", "Intersection of FRANKLIN ST and BUSH ST", "2", "Cathedral Hill", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7882797480559", "-122.423594095968", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635657, "4787358D-9B02-45DC-8099-7830E519D769", 1635657, 1458019167, "392873", 1458019167, "392873", null, "5660136", "2016-03-13T09:14:38", null, "2016-03-13T09:17:47", "Open", "Open", "PG and E - Streetlights Queue", "Streetlights", "Streetlight - Other_Request_Light_Shield", "Other_Request_Light_Shield on Wooden Pole", "Intersection of 29TH AVE and ORTEGA ST", "4", "Outer Sunset", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.751903378891", "-122.487052952285", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635656, "7201FC9A-6CE5-4B21-B8EE-F4801D754AC6", 1635656, 1458019167, "392873", 1458147715, "392873", null, "5660135", "2016-03-13T09:14:12", null, "2016-03-14T15:13:40", "Open", "Open", "Assessor - Recorder Division", "General Requests", "county_clerk - county_clerk - other", "county_clerk - county_clerk - other", "Not associated with a specific address", "0", null, [ null, null, null, null, null ], "Web Self Service", [ null, null ] ]
+  , [ 1635655, "F1A6093A-40A2-494F-AB6A-DD522222D005", 1635655, 1458019167, "392873", 1458019167, "392873", null, "5660133", "2016-03-13T09:13:16", "2016-03-13T12:21:21", "2016-03-13T12:21:21", "Closed", "Case Resolved - Pickup completed", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Furniture", "292 22ND AVE, SAN FRANCISCO, CA, 94121", "1", "Outer Richmond", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.782326995305", "-122.481602287252", null, false ], "Web Self Service", [ null, null ] ]
+  , [ 1635654, "3425E01E-C452-42C5-94DE-83EB301E68AD", 1635654, 1458019167, "392873", 1458019167, "392873", null, "5660125", "2016-03-13T09:09:09", "2016-03-13T12:22:18", "2016-03-13T12:22:18", "Closed", "Case Resolved - Pickup completed.", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Refrigerator", "360 BARNEVELD AVE, SAN FRANCISCO, CA, 94124", "10", "Produce Market", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.74283377647", "-122.403484548734", null, false ], "Integrated Agency", [ null, null ] ]
+  , [ 1635653, "E3599AE4-C4B6-4B92-B931-C405609AC50E", 1635653, 1458019167, "392873", 1458019167, "392873", null, "5660123", "2016-03-13T09:08:49", null, "2016-03-13T09:08:49", "Open", "accepted", "DPW Ops Queue", "Graffiti Private Property", "Not_Offensive Graffiti on Private Property", "Building_other - Not_Offensive", "1225 DIVISADERO ST, SAN FRANCISCO, CA, 94115", "5", "Anza Vista", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.780973653132", "-122.439367307527", null, false ], "Integrated Agency", [ null, null ] ]
+  , [ 1635652, "32AADAF9-3445-4AC9-987C-9A9A1896FD6F", 1635652, 1458019167, "392873", 1458019167, "392873", null, "5660122", "2016-03-13T09:08:44", null, "2016-03-13T09:08:45", "Open", "accepted", "DPW Ops Queue", "Graffiti Private Property", "Not_Offensive Graffiti on Private Property", "Building_other - Not_Offensive", "760 DIVISADERO ST, SAN FRANCISCO, CA, 94117", "5", "Alamo Square", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.776504750194", "-122.437999690301", null, false ], "Integrated Agency", [ null, null ] ]
+  , [ 1635651, "257EAD1E-7286-4F29-B66B-78989175EA77", 1635651, 1458019167, "392873", 1458019167, "392873", null, "5660121", "2016-03-13T09:08:40", null, "2016-03-13T09:08:40", "Open", "accepted", "DPW Ops Queue", "Graffiti Private Property", "Not_Offensive Graffiti on Private Property", "Building_other - Not_Offensive", "800 DIVISADERO ST, SAN FRANCISCO, CA, 94117", "2", "Lower Pacific Heights", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.785792260368", "-122.440305086902", null, false ], "Integrated Agency", [ null, null ] ]
+  , [ 1635650, "9F15EF12-43ED-4C0C-9D49-62A9E6DC5F1E", 1635650, 1458019167, "392873", 1458019167, "392873", null, "5660120", "2016-03-13T09:08:21", null, "2016-03-13T09:08:22", "Open", "accepted", "DPW Ops Queue", "Graffiti Private Property", "Not_Offensive Graffiti on Private Property", "Building_other - Not_Offensive", "1290 GROVE ST, SAN FRANCISCO, CA, 94117", "5", "Alamo Square", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.776062923291", "-122.437769417594", null, false ], "Integrated Agency", [ null, null ] ]
+  , [ 1635649, "F20C6B8F-344A-4B65-B844-E053B1204D3E", 1635649, 1458019167, "392873", 1458147715, "392873", null, "5660113", "2016-03-13T09:05:38", "2016-03-14T09:19:38", "2016-03-14T09:19:38", "Closed", "Case Resolved - Guillermo sent an email out on 3/14/16.", "County Clerk - G", "General Requests", "county_clerk - county_clerk - request_for_service", "county_clerk - county_clerk - request_for_service", "Not associated with a specific address", "0", null, [ null, null, null, null, null ], "Web Self Service", [ null, null ] ]
+  , [ 1635648, "29500DE1-111B-49C8-B3C0-DE9DB7B52C68", 1635648, 1458019167, "392873", 1458147715, "392873", null, "5660112", "2016-03-13T09:05:32", "2016-03-14T09:04:55", "2016-03-14T09:04:55", "Closed", "Case Resolved - 1098", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "371 HAIGHT ST, SAN FRANCISCO, CA, 94102", "5", "Mint Hill", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.772258774619", "-122.428258552275", null, false ], "Web Self Service", [ null, null ] ]
+  , [ 1635647, "7855CFE9-3ADF-4918-9F92-A0B0F4C16FE3", 1635647, 1458019167, "392873", 1458147715, "392873", null, "5660111", "2016-03-13T09:05:27", "2016-03-15T09:13:24", "2016-03-15T09:13:24", "Closed", "Case is a Duplicate - duplicate to SR# 5660109", "Police - Homeless Concerns Queue", "General Requests", "homeless_concerns - homeless_other - request_for_service", "homeless_concerns - homeless_other - request_for_service", "Intersection of 16TH ST and PROSPER ST", "8", "Castro", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7643239840377", "-122.431700346753", null, false ], "Open311", [ null, null ] ]
+  , [ 1635646, "F1E2C309-E49D-425D-B637-C2DDABF0EAFE", 1635646, 1458019167, "392873", 1458147715, "392873", null, "5660109", "2016-03-13T09:04:40", "2016-03-15T02:08:21", "2016-03-15T02:08:21", "Closed", "Case Resolved - done", "DPW Ops Queue", "General Requests", "homeless_concerns - homeless_other - request_for_service", "homeless_concerns - homeless_other - request_for_service", "Intersection of 16TH ST and PROSPER ST", "8", "Castro", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7643239840377", "-122.431700346753", null, false ], "Open311", [ null, null ] ]
+  , [ 1635645, "A443C211-E057-49E8-B16D-BB885B63C7B6", 1635645, 1458019167, "392873", 1458147715, "392873", null, "5660108", "2016-03-13T09:03:11", "2016-03-14T11:01:29", "2016-03-14T11:01:29", "Closed", "Case Resolved - Pickup completed.", "Recology_Abandoned", "Litter Receptacles", "Other_including_abandoned_toter", "N/A", "371 HAIGHT ST, SAN FRANCISCO, CA, 94102", "5", "Mint Hill", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.772258774619", "-122.428258552275", null, false ], "Web Self Service", [ null, null ] ]
+  , [ 1635644, "A0E9217A-454B-4369-896F-D34BBC576B9C", 1635644, 1458019167, "392873", 1458019167, "392873", null, "5660106", "2016-03-13T08:59:53", "2016-03-13T11:14:00", "2016-03-13T11:14:00", "Closed", "Case Resolved - Pickup completed.", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Furniture", "Intersection of BARNEVELD AVE and LOOMIS ST", "10", "Produce Market", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7437944340493", "-122.403243432141", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635643, "E7A563D9-AB46-47BB-8B38-95E688C432B6", 1635643, 1458019167, "392873", 1458019167, "392873", null, "5660103", "2016-03-13T08:58:03", "2016-03-13T10:41:22", "2016-03-13T10:41:22", "Closed", "Case Resolved - 10-98", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of BARNEVELD AVE and LOOMIS ST", "10", "Produce Market", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7437944340493", "-122.403243432141", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635642, "4576EC6F-CEE0-4D5D-AB59-10DA3CA14559", 1635642, 1458019167, "392873", 1458019167, "392873", null, "5660096", "2016-03-13T08:51:43", null, "2016-03-13T08:51:43", "Open", "open", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "269 THERESA ST, SAN FRANCISCO, CA, 94112", "11", "Mission Terrace", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.730289295623", "-122.43651999061", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e58c83df86ba9da056649e/report.jpg", null ] ]
+  , [ 1635641, "E4FE3193-47B5-4124-8C43-6E15DC49BF7A", 1635641, 1458019167, "392873", 1458147715, "392873", null, "5660093", "2016-03-13T08:49:18", "2016-03-14T09:07:14", "2016-03-14T09:07:14", "Closed", "Case Resolved - 1098", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of OFARRELL ST and SCOTT ST", "5", "Western Addition", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7826628801058", "-122.437633353957", null, false ], "Open311", [ null, null ] ]
+  , [ 1635640, "BB8EAE03-852D-409F-9FB8-81CA6885FCD3", 1635640, 1458019167, "392873", 1458147715, "392873", null, "5660088", "2016-03-13T08:44:17", "2016-03-15T06:42:46", "2016-03-15T06:42:46", "Closed", "Case Resolved - cleaned both sides of the streets.", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of LEAVENWORTH ST and EDDY ST", "6", "Tenderloin", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7837237595403", "-122.414241564993", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635639, "3BC4D75D-457E-48F4-BD7B-FF79203F082A", 1635639, 1458019167, "392873", 1458147715, "392873", null, "5660084", "2016-03-13T08:41:22", "2016-03-14T15:54:02", "2016-03-14T15:54:02", "Closed", "Case Resolved - 10-98", "DPW Ops Queue", "Street and Sidewalk Cleaning", "Illegal Encampment", "Encampment Cleanup", "901 BATTERY ST, SAN FRANCISCO, CA, 94111", "3", "Northern Waterfront", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.799821712339", "-122.40147809987", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e58a1adf86ba9da0566485/report.jpg", null ] ]
+  , [ 1635638, "5AEEB48C-B898-4D56-9A33-702384DCEB11", 1635638, 1458019167, "392873", 1458019167, "392873", null, "5660082", "2016-03-13T08:38:49", "2016-03-13T10:39:58", "2016-03-13T10:39:58", "Closed", "Case Resolved - Pickup completed.", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Electronics", "4159 24TH ST, SAN FRANCISCO, CA, 94114", "8", "Noe Valley", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.751101149847", "-122.43536755958", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e58980df86ba9da0566479/photo_20160313_083810.jpg", null ] ]
+  , [ 1635637, "6064449F-FBB8-4A41-B044-4F2ED3169205", 1635637, 1458019167, "392873", 1458147715, "392873", null, "5660079", "2016-03-13T08:36:07", "2016-03-14T15:37:11", "2016-03-14T15:37:11", "Closed", "Case Resolved - 10-98", "DPW Ops Queue", "Street and Sidewalk Cleaning", "Illegal Encampment", "Encampment Cleanup", "1 LOMBARD ST, SAN FRANCISCO, CA, 94111", "3", "Northern Waterfront", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.804006288853", "-122.402468958692", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e588e0df86ba9da056646d/report.jpg", null ] ]
+  , [ 1635636, "5E2D09FB-51AF-4EEA-B383-1D391BB5BA3B", 1635636, 1458019167, "392873", 1458147715, "392873", null, "5660078", "2016-03-13T08:35:43", "2016-03-14T11:52:58", "2016-03-14T11:52:58", "Closed", "Cancelled - Maximo Service Request has been cancelled. Memo: pls give us more informations, which light pole?.", "PUC Streetlights Queue", "Streetlights", "Streetlight - Light_Burnt_Out", "Light_Burnt_Out on Metal Pole", "1400 19TH AVE, SAN FRANCISCO, CA, 94122", "7", "Inner Sunset", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.761678105159", "-122.476914806624", null, false ], "Open311", [ null, null ] ]
+  , [ 1635635, "368491B2-F563-4BAB-8E07-3B31AEDD1089", 1635635, 1458019167, "392873", 1458019167, "392873", null, "5660077", "2016-03-13T08:35:30", null, "2016-03-13T08:35:30", "Open", "open", "DPW Ops Queue", "Tree Maintenance", "Trees - Tree_Other", "Other", "2470 FOLSOM ST, SAN FRANCISCO, CA, 94110", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.757821638706", "-122.414943812368", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e588b7df86ba9da0566458/report.jpg", null ] ]
+  , [ 1635634, "8A95CEB5-E7EA-474F-8F15-2617A3D58B6B", 1635634, 1458019167, "392873", 1458147715, "392873", null, "5660075", "2016-03-13T08:32:04", "2016-03-14T07:02:03", "2016-03-14T07:02:03", "Closed", "Cancelled - Maximo Service Request has been cancelled       Add'l Notes:     Cancel DUP SR", "PUC Sewer Ops", "Sewer Issues", "Sewage_back_up", "Out_of_catch_basin", "Intersection of FELL ST and SCOTT ST", "5", "Alamo Square", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7742765892325", "-122.43594033275", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635633, "5395E229-D496-4DDF-87E7-005DABB4D2CA", 1635633, 1458019167, "392873", 1458019167, "392873", null, "5660074", "2016-03-13T08:31:54", "2016-03-13T10:16:20", "2016-03-13T10:16:20", "Closed", "Case Resolved - Pickup completed.", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Furniture", "Intersection of OPHIR ALY and POST ST", "3", "Lower Nob Hill", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7877410981776", "-122.412735978627", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e587dedf86ba9da056644a/report.jpg", null ] ]
+  , [ 1635632, "74B0D476-504F-4AFC-92D9-D7680925450F", 1635632, 1458019167, "392873", 1458019167, "392873", null, "5660069", "2016-03-13T08:28:54", "2016-03-13T11:13:45", "2016-03-13T11:13:45", "Closed", "Case Resolved - Pickup completed.", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Mattress", "362 CAPP ST, SAN FRANCISCO, CA, 94110", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.760985908945", "-122.418498777405", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635631, "6ADBA879-147D-4877-9EFA-0741117A1219", 1635631, 1458019167, "392873", 1458019167, "392873", null, "5660060", "2016-03-13T08:24:05", null, "2016-03-13T08:24:05", "Open", "open", "DPW BSSR Queue", "Street Defects", "Pavement_Defect", "Pavement_Defect", "2336 19TH AVE, SAN FRANCISCO, CA, 94116", "7", "Golden Gate Heights", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.744226221291", "-122.475597045627", null, false ], "Open311", [ null, null ] ]
+  , [ 1635630, "05352AB0-4C46-4F19-99B0-6A8DD0BC98CF", 1635630, 1458019167, "392873", 1458019167, "392873", null, "5660059", "2016-03-13T08:21:15", "2016-03-13T08:41:40", "2016-03-13T08:41:40", "Closed", "Case Resolved -", "DPW Ops Queue", "Graffiti Private Property", "Not_Offensive Graffiti on Private Property", "Building_other - Not_Offensive", "15 PROSPER ST, SAN FRANCISCO, CA, 94114", "8", "Castro", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.764166174515", "-122.431592849056", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e58562df86ba9da0566435/report.jpg", null ] ]
+  , [ 1635629, "E5D10952-BC54-4DDD-9905-A3647A4BF9A0", 1635629, 1458019167, "392873", 1458019167, "392873", null, "5660058", "2016-03-13T08:20:24", null, "2016-03-13T08:38:32", "Open", "open", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "931 LARKIN ST, SAN FRANCISCO, CA, 94109", "6", "Lower Nob Hill", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.786677164976", "-122.418339682558", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635628, "88F033C6-D9D0-487E-BB2D-F35FD1ACE824", 1635628, 1458019167, "392873", 1458019167, "392873", null, "5660055", "2016-03-13T08:14:17", "2016-03-13T18:59:27", "2016-03-13T18:59:27", "Closed", "Case Resolved - done", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "2987 22ND ST, SAN FRANCISCO, CA, 94110", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.75559805233", "-122.414103210661", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e583bfdf86ba9da056642b/report.jpg", null ] ]
+  , [ 1635627, "5A3104CE-67EA-455A-85BC-C81E74B81967", 1635627, 1458019167, "392873", 1458019167, "392873", null, "5660054", "2016-03-13T08:10:34", "2016-03-13T09:19:15", "2016-03-13T09:19:15", "Closed", "Case Resolved -  Not a SFWD issue. This belongs to Park Merced Property mgnt", "311 Supervisor Queue", "Sewer Issues", "Water_leak", "Other", "8 JUAN BAUTISTA CIR, SAN FRANCISCO, CA, 94132", "7", "Parkmerced", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.71857841686", "-122.478065856293", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635626, "0BDA44B2-76E9-43D6-8A07-C61E881E152E", 1635626, 1458019167, "392873", 1458019167, "392873", null, "5660050", "2016-03-13T08:08:14", "2016-03-13T11:55:40", "2016-03-13T11:55:40", "Closed", "Case Resolved - Maximo Service Request has been resolved", "PUC - Sewer - G", "General Requests", "puc - sewer - request_for_service", "puc - sewer - request_for_service", "Intersection of GOLDEN GATE AVE and FRANKLIN ST", "5", null, [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7808209151289", "-122.422086779986", null, false ], "Integrated Agency", [ null, null ] ]
+  , [ 1635625, "8FD231F4-00B3-4999-84E7-EDAA03B45FA4", 1635625, 1458019167, "392873", 1458147715, "392873", null, "5660045", "2016-03-13T08:03:08", "2016-03-15T21:37:54", "2016-03-15T21:37:54", "Closed", "Case Resolved - Field Work has been completed.       Add'l Notes:     relive 4 cb", "PUC Sewer Ops", "Sewer Issues", "Flooding", "On_street", "Intersection of GEARY BLVD and ARGUELLO BLVD", "1", null, [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.781257036248", "-122.458858590658", null, false ], "Twitter", [ "http://pic.twitter.com/b5NNXQF9PL", null ] ]
+  , [ 1635624, "39FA77C7-858E-4540-80A9-035F9844D5DF", 1635624, 1458019167, "392873", 1458019167, "392873", null, "5660040", "2016-03-13T07:56:32", "2016-03-13T08:08:10", "2016-03-13T08:08:10", "Closed", "Case Resolved - duplicate", "DPW Ops Queue", "Sewer Issues", "Flooding", "Flooding On_street", "Intersection of ARGUELLO BLVD and GEARY BLVD", "1", null, [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.781257036248", "-122.458858590658", null, false ], "Web Self Service", [ null, null ] ]
+  , [ 1635623, "51A2C039-5C56-4DDB-9573-2B3118D6F063", 1635623, 1458019167, "392873", 1458147715, "392873", null, "5660032", "2016-03-13T07:49:13", "2016-03-14T09:08:01", "2016-03-14T09:08:01", "Closed", "Case Resolved - Field Work has been completed.       Add'l Notes:     relieved ss Relieved ss marked for dig up,ms running.", "PUC Sewer Ops", "Sewer Issues", "Sewage_back_up", "Outofsewervent4inch", "1927 10TH AVE, SAN FRANCISCO, CA, 94116", "7", "Golden Gate Heights", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.752247190421", "-122.466700430392", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635622, "3999EDE8-E97B-459D-A3ED-5E06F75F5FA1", 1635622, 1458019167, "392873", 1458147715, "392873", null, "5660031", "2016-03-13T07:49:10", "2016-03-14T14:18:41", "2016-03-14T14:18:41", "Closed", "Case Resolved - 10-98", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of LARKIN ST and CLAY ST", "3", "Polk Gulch", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7925931404284", "-122.419401805874", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635621, "581E6A6C-1D69-4296-8984-9FE3607F34DB", 1635621, 1458019167, "392873", 1458019167, "392873", null, "5660026", "2016-03-13T07:45:52", "2016-03-13T08:09:40", "2016-03-13T08:09:40", "Closed", "Case Resolved - SFPD #215", "DPW Ops Queue", "Street and Sidewalk Cleaning", "Illegal Encampment", "Encampment Cleanup", "4649 19TH ST, SAN FRANCISCO, CA, 94114", "8", null, [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.758746203", "-122.441756237", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e57d1adf86ba9da056641e/report.jpg", null ] ]
+  , [ 1635620, "7149972A-F1C0-4390-96FC-9311BFB19D83", 1635620, 1458019167, "392873", 1458019167, "392873", null, "5660025", "2016-03-13T07:45:51", "2016-03-13T08:58:14", "2016-03-13T08:58:14", "Closed", "Case Resolved - Pickup completed.", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Boxed or Bagged Items", "Intersection of TRENTON ST and PACIFIC AVE", "3", "Chinatown", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7965986450412", "-122.409251501545", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635619, "4C4D20C1-8D00-4D5A-88B9-DC12233D0AE2", 1635619, 1458019167, "392873", 1458019167, "392873", null, "5660024", "2016-03-13T07:44:54", null, "2016-03-13T07:46:27", "Open", "open", "DPW BSSR Queue", "Street Defects", "Pavement_Defect", "Pavement_Defect", "Intersection of LISBON ST and PERSIA AVE", "11", "Excelsior", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7220003043685", "-122.433606259599", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635618, "D71903EB-15FD-44E2-BC9E-14A3CB746AB8", 1635618, 1458019167, "392873", 1458147715, "392873", null, "5660020", "2016-03-13T07:43:30", "2016-03-14T07:52:23", "2016-03-14T07:52:23", "Closed", "Case Resolved -", "DPT Signal Queue", "Damaged Property", "Damaged Traffic_Signal", "Traffic_Signal", "Intersection of MARKET ST and GOUGH ST", "5", "Lower Haight", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7729089925437", "-122.422186566302", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635617, "6071AFF9-A5A3-41CC-BFFC-1104819D2955", 1635617, 1458019167, "392873", 1458147715, "392873", null, "5660014", "2016-03-13T07:36:18", "2016-03-14T08:29:10", "2016-03-14T08:29:10", "Closed", "Case Resolved - 1098", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "1699 OAKDALE AVE, SAN FRANCISCO, CA, 94124", "10", "Silver Terrace", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.735475350989", "-122.392184230792", null, false ], "Open311", [ null, null ] ]
+  , [ 1635616, "985472FD-D181-4D6D-92D2-59E9A45956A7", 1635616, 1458019167, "392873", 1458019167, "392873", null, "5660009", "2016-03-13T07:31:10", null, "2016-03-13T07:34:41", "Open", "Open", "MUNI Work Queue", "MUNI Feedback", "MUNI - Services_Miscellaneous", "801_NextMuni_Technology", "Intersection of SILVER AVE and CAMBRIDGE ST", "9", "University Mound", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7290463794445", "-122.419486422889", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635615, "2531AF34-DF30-4378-99F1-E87684F16466", 1635615, 1458019167, "392873", 1458019167, "392873", null, "5660004", "2016-03-13T07:14:09", "2016-03-13T10:05:56", "2016-03-13T10:05:56", "Closed", "Case Resolved - Pickup completed", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Boxed or Bagged Items", "900 CLEMENT ST, SAN FRANCISCO, CA, 94118", "1", "Inner Richmond", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.782897241883", "-122.468873287965", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635614, "22DBFC9D-ADC6-4110-B3EA-6A5E1B611244", 1635614, 1458019167, "392873", 1458019167, "392873", null, "5660001", "2016-03-13T07:13:23", null, "2016-03-13T07:38:22", "Open", "open", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "160 10TH ST, SAN FRANCISCO, CA, 94103", "6", "South of Market", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.774429672404", "-122.415100669219", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e57579df86ba9da0566406/report.jpg", null ] ]
+  , [ 1635613, "DA0CDEDD-175A-4107-8E79-48691B71EA76", 1635613, 1458019167, "392873", 1458019167, "392873", null, "5659997", "2016-03-13T07:08:23", "2016-03-13T10:47:47", "2016-03-13T10:47:47", "Closed", "Case Resolved - Maximo Service Request has been resolved", "PUC - Sewer - G", "General Requests", "puc - sewer - request_for_service", "puc - sewer - request_for_service", "Intersection of DIVISADERO ST and HAIGHT ST", "5", "Buena Vista", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7712673011746", "-122.437045741868", null, false ], "Integrated Agency", [ null, null ] ]
+  , [ 1635612, "A3E1F260-00AF-4E9D-9A47-A4735B62B21A", 1635612, 1458019167, "392873", 1458019167, "392873", null, "5659996", "2016-03-13T07:07:56", "2016-03-13T10:46:35", "2016-03-13T10:46:35", "Closed", "Case Resolved - Field Work has been completed.       Add'l Notes:     relieved c/b relieved c/b n/w corner debri on grate", "PUC - Sewer - G", "General Requests", "puc - sewer - request_for_service", "puc - sewer - request_for_service", "Intersection of DIVISADERO ST and SACRAMENTO ST", "2", "Pacific Heights", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7889953479673", "-122.440623738505", null, false ], "Integrated Agency", [ null, null ] ]
+  , [ 1635611, "795EAE37-5BBA-4A44-87F8-126D08605887", 1635611, 1458019167, "392873", 1458019167, "392873", null, "5659993", "2016-03-13T06:55:30", "2016-03-13T18:59:48", "2016-03-13T18:59:48", "Closed", "Case Resolved - cleaned around", "DPW Ops Queue", "Street and Sidewalk Cleaning", "Illegal Encampment", "Encampment Cleanup", "Intersection of ALAMEDA ST and TREAT AVE", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7680736064434", "-122.412424349882", null, false ], "Open311", [ null, null ] ]
+  , [ 1635610, "A0AC44CC-9DF3-4958-916C-4544F9B8E0F7", 1635610, 1458019167, "392873", 1458019167, "392873", null, "5659982", "2016-03-13T06:31:11", null, "2016-03-13T06:32:30", "Open", "open", "DPW BSSR Queue", "Street Defects", "Pavement_Defect", "Pavement_Defect", "Intersection of DIVISADERO ST and HAIGHT ST", "5", "Buena Vista", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7712673011746", "-122.437045741868", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635609, "C520207C-16A3-4ACA-844F-7B7FF115E993", 1635609, 1458019167, "392873", 1458019167, "392873", null, "5659967", "2016-03-13T06:15:56", "2016-03-13T08:45:09", "2016-03-13T08:45:09", "Closed", "Case Resolved - 10-98", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "Intersection of GEARY BLVD and ARGUELLO BLVD", "1", null, [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.781257036248", "-122.458858590658", null, false ], "Web Self Service", [ null, null ] ]
+  , [ 1635608, "86D6EBA0-B06F-4A0F-BAE4-A361383AFA74", 1635608, 1458019167, "392873", 1458019167, "392873", null, "5659961", "2016-03-13T06:05:23", "2016-03-13T09:16:36", "2016-03-13T09:16:36", "Closed", "Case Resolved - Pickup completed.", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Boxed or Bagged Items", "24 PROSPECT AVE, SAN FRANCISCO, CA, 94110", "9", "Bernal Heights", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.745008233056", "-122.417755799618", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635607, "4CAFF8C8-6E74-48B2-85DB-1A54B64942F1", 1635607, 1458019167, "392873", 1458147715, "392873", null, "5659959", "2016-03-13T05:22:52", "2016-03-14T11:59:47", "2016-03-14T11:59:47", "Closed", "Case Resolved - Field Work has been completed.       Add'l Notes:     Unable to Locate Problem Walked area to find Problem / M/H cover. Unable to locate. Wait for Call-Back w/ right address.", "PUC - Sewer - G", "General Requests", "puc - sewer - request_for_service", "puc - sewer - request_for_service", "Intersection of 3RD ST and KING ST", "6", "Mission Bay", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7781256715196", "-122.391840449142", null, false ], "Integrated Agency", [ null, null ] ]
+  , [ 1635606, "CDB9D664-99B9-4090-BC35-931F9B2F0B0D", 1635606, 1458019167, "392873", 1458019167, "392873", null, "5659958", "2016-03-13T05:19:19", "2016-03-13T08:43:25", "2016-03-13T08:43:25", "Closed", "Case Resolved - Pickup completed.", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Boxed or Bagged Items", "Intersection of 25TH ST and TREAT AVE", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7509681368491", "-122.412838561106", null, false ], "Web Self Service", [ null, null ] ]
+  , [ 1635605, "206B7B38-97F7-4C09-A098-CF142131FB0F", 1635605, 1458019167, "392873", 1458019167, "392873", null, "5659957", "2016-03-13T05:17:45", "2016-03-13T08:48:35", "2016-03-13T08:48:35", "Closed", "Case Resolved - Pickup completed.", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Furniture", "Intersection of ELIZABETH ST and GUERRERO ST", "8", "Dolores Heights", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7527776342098", "-122.422909464441", null, false ], "Web Self Service", [ null, null ] ]
+  , [ 1635604, "10A5DBAF-980D-4D3C-81BD-D60BB22582D8", 1635604, 1458019167, "392873", 1458019167, "392873", null, "5659956", "2016-03-13T05:16:20", "2016-03-13T08:48:36", "2016-03-13T08:48:36", "Closed", "Case Resolved - Pickup completed.", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Mattress", "Intersection of 26TH ST and BARTLETT ST", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7489737874186", "-122.419246728308", null, false ], "Web Self Service", [ null, null ] ]
+  , [ 1635603, "05657778-B6D9-4105-8E51-2C3C46E3AE41", 1635603, 1458019167, "392873", 1458019167, "392873", null, "5659954", "2016-03-13T05:14:49", "2016-03-13T10:05:55", "2016-03-13T10:05:55", "Closed", "Case Resolved - Pickup completed", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Bulky Items", "Furniture", "Intersection of STILL ST and ROUSSEAU ST", "8", "Mission Terrace", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7318683917579", "-122.429956779702", null, false ], "Web Self Service", [ null, null ] ]
+  , [ 1635602, "C48700E9-15BD-4323-BD02-2FD4255B92FB", 1635602, 1458019167, "392873", 1458019167, "392873", null, "5659953", "2016-03-13T05:11:42", "2016-03-13T08:43:18", "2016-03-13T08:43:18", "Closed", "Case Resolved - Pickup completed.", "Recology_Abandoned", "Street and Sidewalk Cleaning", "Illegal Encampment", "Carts", "Intersection of CORTLAND AVE and MISSION ST", "9", "Bernal Heights", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7410273857498", "-122.422840611723", null, false ], "Web Self Service", [ null, null ] ]
+  , [ 1635601, "44436A1D-EE43-4555-B125-0D43B5EDE900", 1635601, 1458019167, "392873", 1458147715, "392873", null, "5659950", "2016-03-13T03:41:43", "2016-03-15T07:52:37", "2016-03-15T07:52:37", "Closed", "Case is a Duplicate - CASE  #5638599", "DPT Abandoned Vehicles Work Queue", "Abandoned Vehicle", "Abandoned Vehicle - Car2door", "Grey - Dodge - Challenger  - ARN3159", "113 PROSPECT AVE, SAN FRANCISCO, CA, 94110", "9", "Bernal Heights", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.74335222037", "-122.418614173203", null, false ], "Web Self Service", [ null, null ] ]
+  , [ 1635600, "98A7E68C-8F90-45B1-BBBD-0CDE6DD3DCC9", 1635600, 1458019167, "392873", 1458147715, "392873", null, "5659949", "2016-03-13T03:19:08", "2016-03-14T16:31:02", "2016-03-14T16:31:02", "Closed", "Case Resolved - Guillermo sent an email out on 3/14/16.", "County Clerk - G", "General Requests", "county_clerk - county_clerk - followup_request", "county_clerk - county_clerk - followup_request", "Not associated with a specific address", "0", null, [ null, null, null, null, null ], "Web Self Service", [ null, null ] ]
+  , [ 1635599, "A9A93B2C-BC04-4613-BED8-FD9F59161ED2", 1635599, 1458019167, "392873", 1458019167, "392873", null, "5659948", "2016-03-13T01:50:44", null, "2016-03-13T01:50:46", "Open", "open", "DPW BSSR Queue", "Street Defects", "Pavement_Defect", "Pavement_Defect", "385 SOUTH VAN NESS AVE, SAN FRANCISCO, CA, 94103", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.767174741531", "-122.417318864325", null, false ], "Open311", [ null, null ] ]
+  , [ 1635598, "1EA2E7DF-AC2F-4021-9D27-19DE853A2EB7", 1635598, 1458019167, "392873", 1458019167, "392873", null, "5659945", "2016-03-13T01:29:40", null, "2016-03-13T01:31:11", "Open", "Open", "Housing Authority SR Queue", "SFHA Requests", "SFHA Priority - Emergency", "Carpenters", "1251 TURK ST, Apt 711, SAN FRANCISCO, CA, 94115", "5", "Western Addition", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.780353475079", "-122.42950939444", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635597, "AA2BF043-F2F9-45B2-93A2-1254A1794497", 1635597, 1458019167, "392873", 1458147715, "392873", null, "5659943", "2016-03-13T01:18:27", "2016-03-14T05:29:26", "2016-03-14T05:29:26", "Closed", "Accepted - Noise informational reports closed and summarized for department use.", "Noise Report Queue", "Noise Report", "other_excessive_noise", "Noise Report - other_excessive_noise", "736 LEAVENWORTH ST, SAN FRANCISCO, CA, 94109", "3", "Lower Nob Hill", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.787982901643", "-122.414943216196", null, false ], "Web Self Service", [ null, null ] ]
+  , [ 1635596, "F7C094CB-1830-46CB-A059-E2A4B1A9DB2B", 1635596, 1458019167, "392873", 1458147715, "392873", null, "5659941", "2016-03-13T01:05:56", "2016-03-14T21:41:44", "2016-03-14T21:41:44", "Closed", "Case Resolved - Field Work has been completed.       Add'l Notes:     wo to tv ss relieve plugged ss di not reach ms in for minicam-will email", "PUC Sewer Ops", "Sewer Issues", "Sewage_back_up", "Outofsewervent4inch", "1104 SANCHEZ ST, SAN FRANCISCO, CA, 94114", "8", "Noe Valley", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.751478801222", "-122.429718762135", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635595, "80443A5A-A958-46A5-83AF-0058AD6782CC", 1635595, 1458019167, "392873", 1458019167, "392873", null, "5659936", "2016-03-13T00:53:41", null, "2016-03-13T01:00:48", "Open", "Open", "MUNI Work Queue", "MUNI Feedback", "MUNI - Conduct_Inattentiveness_Negligence", "201_Pass_Up_Did_Not_Wait_for_Transferee", "Intersection of 3RD ST and MARIN ST", "10", "Central Waterfront", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7490046161992", "-122.38745615937", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635593, "3B3A69E7-04E2-4A83-AE2E-B6399D0F10E0", 1635593, 1457888600, "392873", 1458019167, "392873", null, "5659935", "2016-03-13T00:52:15", "2016-03-13T04:09:34", "2016-03-13T04:09:34", "Closed", "Case Resolved - dispatched route", "Recology_Overflowing", "Street and Sidewalk Cleaning", "City_garbage_can_overflowing", "City_garbage_can_overflowing", "901 LARKIN ST, SAN FRANCISCO, CA, 94109", "6", "Lower Nob Hill", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.786108668162", "-122.418142116134", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635592, "3E6B9F47-6522-4F17-9884-EA9EC3F6D272", 1635592, 1457888600, "392873", 1458019167, "392873", null, "5659934", "2016-03-13T00:51:24", null, "2016-03-13T00:51:25", "Open", "open", "DPW BSM Queue", "Sidewalk or Curb", "Sidewalk_Defect", "Collapsed_sidewalk", "Intersection of FRANKLIN ST and MARKET ST", "6", "South of Market", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.7740078350444", "-122.420698900164", null, false ], "Open311", [ "http://mobile311.sfgov.org/media/san_francisco/report/photos/56e52a02df8663f2bfa47491/report.jpg", null ] ]
+  , [ 1635591, "74D96E13-8541-401C-A154-27E7E53C22DB", 1635591, 1457888600, "392873", 1458019167, "392873", null, "5659929", "2016-03-13T00:33:48", null, "2016-03-13T00:37:03", "Open", "open", "DPW Ops Queue", "Street and Sidewalk Cleaning", "General Cleaning", "Other Loose Garbage", "931 LARKIN ST, SAN FRANCISCO, CA, 94109", "6", "Lower Nob Hill", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.786677164976", "-122.418339682558", null, false ], "Voice In", [ null, null ] ]
+  , [ 1635590, "50316E64-4CC9-4085-97C7-A6D773ED2005", 1635590, 1457888600, "392873", 1458019167, "392873", null, "5659927", "2016-03-13T00:16:57", null, "2016-03-13T00:17:02", "Open", "Open", "Entertainment Commission - G", "Noise Report", "entertainment", "Noise Report - entertainment", "2565 MISSION ST, SAN FRANCISCO, CA, 94110", "9", "Mission", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.756079748973", "-122.418627051739", null, false ], "Web Self Service", [ null, null ] ]
+  , [ 1635589, "ADDFA876-D6A0-4C04-A2EC-0D54002D3150", 1635589, 1457888600, "392873", 1458147715, "392873", null, "5659926", "2016-03-13T00:13:08", "2016-03-14T09:57:32", "2016-03-14T09:57:32", "Closed", "Case Resolved -", "311 Supervisor Queue", "General Requests", "mta - parking_sfpark - request_for_service", "mta - parking_sfpark - request_for_service", "399 STEINER ST, SAN FRANCISCO, CA, 94117", "5", "Lower Haight", [ "{\"address\":\"\",\"city\":\"\",\"state\":\"\",\"zip\":\"\"}", "37.772648890125", "-122.432381801308", null, false ], "Web Self Service", [ null, null ] ]
+  ]
+}
