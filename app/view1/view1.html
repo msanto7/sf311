@@ -1,39 +1,41 @@
 <!DOCTYPE html>
-<html>
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <!-- D3  -->
 <script src="http://d3js.org/d3.v3.min.js"> </script>
 </head>
-<body ng-app="">
-
-   <!-- <script>
-        d3.select("p").text("D3 TEST!!!!");
-    </script>
-    -->
+<body ng-app="" >
 
     <form>
         Select a Filter:
-        <input type="radio" ng-model="myVar" value="dogs">Dogs
-        <input type="radio" ng-model="myVar" value="tuts">Tutorials
-        <input type="radio" ng-model="myVar" value="cars">Cars
+        <input type="radio" ng-model="myVar" value="status"> Case Status
+        <input type="radio" ng-model="myVar" value="agency"> Responsible Agency
+        <input type="radio" ng-model="myVar" value="neighborhood"> Neighborhood
     </form>
     <center>
-        <div ng-switch="myVar">
-            <div ng-switch-when="dogs">
-                <h1>Dogs</h1>
-                <p>Welcome to a world of dogs.</p>
+        <div class="com-md-12" ng-switch="myVar">
+            <div class="com-md-12" ng-switch-when="status">
+                <h1>Status</h1>
+                <p>Displayed based on open or closed status.</p>
+                <nvd3 options="nvd3.chart1.options" data="nvd3.chart1.data"></nvd3>
             </div>
-            <div ng-switch-when="tuts">
-                <h1>Tutorials</h1>
-                <p>Learn from examples.</p>
+            <div class="com-md-12" ng-switch-when="agency">
+                <h1>Responsible Agency</h1>
+                <p>Display based on the agency responsible for servicing the request.</p>
+                <nvd3 options="nvd3.chart2.options" data="nvd3.chart2.data"></nvd3>
             </div>
-            <div ng-switch-when="cars">
-                <h1>Cars</h1>
-                <p>Read about cars.</p>
+            <div class="com-md-12" ng-switch-when="neighborhood">
+                <h1>Neighborhood</h1>
+                <p>Display based on the neighborhood from which the request came.</p>
+                <nvd3 options="nvd3.chart3.options" data="nvd3.chart3.data"></nvd3>
             </div>
         </div>
     </center>
+
+
+
+
+
 
 
 </body>
