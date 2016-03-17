@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <head>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="/app/bower_components/angular/angular.min.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> -->
 <!-- D3  -->
 <script src="http://d3js.org/d3.v3.min.js"> </script>
+   <!--<script
+            src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js">
+    </script>-->
+    <!-- Trying to use nvd3 pie chart
+   <script src="/app/bower_components/angularjs-nvd3-directives-angularjs-nvd3-directives-v0.0.7-41-g0b50abe/angularjs-nvd3-directives-angularjs-nvd3-directives-0b50abe/dist/angularjs-nvd3-directives.js"></script>
+   <!-- <script type="text/javascript" src="/app/angularjs-plugin/wrappers/angularjs/angular-fusioncharts.js"></script>
+    <script src="/app/bower_components/d3/d3.js"></script>
+    <script src="/app/bower_components/nvd3/nv.d3.js"></script>
+    <script src="/app/bower_components/nvd3/build/nv.d3.css"></script> -->
 </head>
 <body ng-app="" >
 
-    <form>
+<div ng-controller="View1Ctrl">
+   {{exampleData}}
+</div>
+
+
+<!--<div ng-controller="ExampleCtrl">
+   < <nvd3-pie-chart
+            data="exampleData"
+            id="exampleId"
+            width="550"
+            height="350"
+            x="xFunction()"
+            y="yFunction()"
+            showLabels="true">
+        <svg></svg>
+    </nvd3-pie-chart>
+</div>-->
+
+
+   <!-- <form>
         Select a Filter:
         <input type="radio" ng-model="myVar" value="status"> Case Status
         <input type="radio" ng-model="myVar" value="agency"> Responsible Agency
@@ -17,25 +46,20 @@
             <div class="com-md-12" ng-switch-when="status">
                 <h1>Status</h1>
                 <p>Displayed based on open or closed status.</p>
-                <nvd3 options="nvd3.chart1.options" data="nvd3.chart1.data"></nvd3>
-            </div>
+                <!--<nvd3 options="nvd3.chart1.options" data="nvd3.chart1.data"></nvd3>-->
+           <!-- </div>
             <div class="com-md-12" ng-switch-when="agency">
                 <h1>Responsible Agency</h1>
                 <p>Display based on the agency responsible for servicing the request.</p>
-                <nvd3 options="nvd3.chart2.options" data="nvd3.chart2.data"></nvd3>
-            </div>
+                <!--<nvd3 options="nvd3.chart2.options" data="nvd3.chart2.data"></nvd3>-->
+           <!-- </div>
             <div class="com-md-12" ng-switch-when="neighborhood">
                 <h1>Neighborhood</h1>
                 <p>Display based on the neighborhood from which the request came.</p>
-                <nvd3 options="nvd3.chart3.options" data="nvd3.chart3.data"></nvd3>
+               <!-- <nvd3 options="nvd3.chart3.options" data="nvd3.chart3.data"></nvd3>
             </div>
         </div>
-    </center>
-
-
-
-
-
+    </center>-->
 
 
 </body>

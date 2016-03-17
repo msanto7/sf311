@@ -1,7 +1,8 @@
-/**
- * Created by Mike on 3/15/2016.
- */
-'use strict';
+/*'use strict';
+
+//This is a modified version of Jesse's data service file to load the json data for my application
+
+
 
 //Angular factory for loading and parsing the local JSON data
 app.factory('dataService', ['$http', '$q', function ($http, $q) {
@@ -23,6 +24,8 @@ app.factory('dataService', ['$http', '$q', function ($http, $q) {
         return deferred.promise;
 
     };
+
+    //all same ^^
 
     var _parseGeoJSON = function(data){
         var geoJSONObjs = [];
@@ -52,7 +55,7 @@ app.factory('dataService', ['$http', '$q', function ($http, $q) {
                         "coordinates": [parseFloat(y), parseFloat(x)]
                     },
                     "properties": {
-                        "offense": record[18],
+                        "category": record[18],
                         "date": date
                     }
                 };
@@ -93,12 +96,11 @@ app.factory('dataService', ['$http', '$q', function ($http, $q) {
             var date = new Date(year, month, day, hours, minutes, 0, 0);
 
             var json = {
-                "offense": record[18],
+                "category": record[18],
                 "date": date,
-                "coords": coordObj,
-                "gender": record[10],
-                "age": record[9],
-                "ethnicity": record[11]
+                "address": coordObj,
+                "status": record[10],
+                "source": record[9],
             };
 
             jsonObjs.push(json);
@@ -113,3 +115,5 @@ app.factory('dataService', ['$http', '$q', function ($http, $q) {
     return dataServiceFactory;
 
 }]);
+
+    */
