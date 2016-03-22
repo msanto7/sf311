@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <head>
-  <script src="/app/bower_components/angular/angular.min.js"></script>
-<!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> -->
-<!-- D3  -->
+  <!-- <script src="/app/bower_components/angular/angular.min.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<!-- D3
 <script src="http://d3js.org/d3.v3.min.js"> </script>
+    <script src="/app/view1/MainController.js"> </script>
+    <script src="/app/view1/view1.js"> </script> -->
+
    <!--<script
             src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js">
     </script>-->
@@ -14,14 +17,16 @@
     <script src="/app/bower_components/nvd3/nv.d3.js"></script>
     <script src="/app/bower_components/nvd3/build/nv.d3.css"></script> -->
 </head>
-<body ng-app="" >
+<body ng-app="myApp"
 
-<div ng-controller="View1Ctrl">
-   {{exampleData}}
+<div class= "main" ng-controller= "View1Ctrl">
+
+  <h1> {{ exampleData }} </h1>
 </div>
 
 
-<!--<div ng-controller="ExampleCtrl">
+
+<!--<div ng-controller="MainController">
    < <nvd3-pie-chart
             data="exampleData"
             id="exampleId"
