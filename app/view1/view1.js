@@ -14,418 +14,227 @@ angular.module('myApp.view1', ['ngRoute', 'nvd3'])
             chart: {
                 type: 'discreteBarChart',
                 height: 450,
+                width: 1200,
                 margin : {
                     top: 20,
                     right: 20,
                     bottom: 60,
-                    left: 55
+                    left: 65
                 },
                 x: function(d){ return d.label; },
                 y: function(d){ return d.value; },
                 showValues: true,
+                staggerLabels: true,
                 valueFormat: function(d){
                     return d3.format(',.4f')(d);
                 },
                 transitionDuration: 500,
                 xAxis: {
-                    axisLabel: 'X Axis'
+                    axisLabel: 'Status'
                 },
                 yAxis: {
-                    axisLabel: 'Y Axis',
-                    axisLabelDistance: 30
+                    axisLabel: '# of Requests'
                 }
             }
         };
         $scope.data = [{
             key: "Cumulative Return",
             values: [
-                { "label" : "A" , "value" : -29.765957771107 },
-                { "label" : "B" , "value" : 0 },
-                { "label" : "C" , "value" : 32.807804682612 },
-                { "label" : "D" , "value" : 196.45946739256 },
-                { "label" : "E" , "value" : 0.19434030906893 },
-                { "label" : "F" , "value" : -98.079782601442 },
-                { "label" : "G" , "value" : -13.925743130903 },
-                { "label" : "H" , "value" : -5.1387322875705 }
+                { "label" : "Open" , "value" : 49 },
+                { "label" : "Closed" , "value" : 134 }
             ]
         }];
 
-     }]);
+     }])
 
-
-
-
-
-
-/*'use strict';
-
-angular.module('myApp.view1', ['ngRoute', 'nvd3'])
-
-    .config(['$routeProvider', function($routeProvider) {
-        $routeProvider.when('/', {
-            templateUrl: 'view1/view1.html',
-            controller: 'View1Ctrl'
-        });
-    }])
-
-    .controller('View1Ctrl', ['$scope', 'dataService', function($scope, dataService) {
-
-        //An array of Regular Expressions and offense group names used to aggregate similar charge descriptions
-        var serviceCategory = [{
-            exp: /General Requests/,
-            name: 'General Requests'
-        },{
-            exp: /Street and Sidewalk Cleaning/,
-            name: 'Street and Sidewalk Cleaning'
-        },{
-            exp: /Sewer Issues/,
-            name: 'Sewer Issues'
-        },{
-            exp: /Street and Sidewalk Cleaning/,
-            name: 'Street and Sidewalk Cleaning'
-        },{
-            exp: /Abandoned Vehicle/,
-            name: 'Abandoned Vehicle'
-        },{
-            exp: /Graffiti Private Property/,
-            name: 'Graffiti Private Property'
-        },{
-            exp: /Tree Maintenance/,
-            name: 'Tree Maintenance'
-        },{
-            exp: /311 External Request/,
-            name: '311 External Request'
-        },{
-            exp: /Street Defects/,
-            name: 'Street Defects'
-        },{
-            exp: /Catch Basin Maintenance/,
-            name: 'Catch Basin Maintenance'
-        },{
-            exp: /SFHA Requests/,
-            name: 'SFHA Requests'
-        },{
-            exp: /Rec and Park Requests/,
-            name: 'Rec and Park Requests'
-        },{
-            exp: /Damaged Property/,
-            name: 'Damaged Property'
-        },{
-            exp: /Sign Repair/,
-            name: 'Sign Repair'
-        },{
-            exp: /MUNI Feedback/,
-            name: 'MUNI Feedback'
-        },{
-            exp: /Streetlights|/,
-            name: 'Streetlights'
-        },{
-            exp: /Noise Report/,
-            name: 'Noise Report'
-        }]
-
-        //Configuration for charts using controller scope variable
-        angular.extend($scope, {
-            description: 'Loading Description...',
-            data: {
-                categories: [],
-                source: {
-                    voiceIn: [],
-                    open311: [],
-                    webSelfService: [],
-                    integratedAgency: []
-                },
-                time: []
+.controller('Agency', ['$scope', function($scope) {
+    $scope.options = {
+        chart: {
+            type: 'discreteBarChart',
+            height: 450,
+            width: 1200,
+            margin : {
+                top: 20,
+                right: 20,
+                bottom: 60,
+                left: 70
             },
-            nvd3: {
-                chart1: {
-                    options: {
-                        chart: {
-                            type: 'discreteBarChart',
-                            height: 450,
-                            margin: {
-                                top: 20,
-                                right: 20,
-                                bottom: 60,
-                                left: 55
-                            },
-                            x: function (d) {
-                                return d.label;
-                            },
-                            y: function (d) {
-                                return d.value;
-                            },
-                            clipEdge: true,
-                            showValues: true,
-                            valueFormat: function (d) {
-                                return d3.format('d')(d);
-                            },
-                            transitionDuration: 500,
-                            yAxis: {
-                                axisLabel: '',
-                                axisLabelDistance: 30,
-                                tickFormat: function (d) {
-                                    return d3.format('d')(d);
-                                }
-                            },
-                            staggerLabels: true
-                        }
-                    },
-                    data: []
-                },
-                chart2: {
-                    options: {
-                        "chart": {
-                            "type": "multiBarHorizontalChart",
-                            "height": 450,
-                            "margin": {
-                                "top": 20,
-                                "right": 20,
-                                "bottom": 60,
-                                "left": 130
-                            },
-                            "clipEdge": true,
-                            "staggerLabels": true,
-                            "transitionDuration": 500,
-                            "stacked": true,
-                            "xAxis": {
-                                showMaxMin: false
-                            },
-                            valueFormat: function (d) {
-                                return d3.format('d')(d);
-                            },
-                            x: function (d) {
-                                return d.label;
-                            },
-                            y: function (d) {
-                                return d.value;
-                            },
-                            yAxis: {
-                                tickFormat: function (d) {
-                                    return d3.format('d')(d);
-                                }
-                            }
-                        }
-                    },
-                    data: []
-                },
-                chart3: {
-                    options: {
-                        chart: {
-                            type: 'stackedAreaChart',
-                            height: 450,
-                            margin: {
-                                top: 20,
-                                right: 20,
-                                bottom: 60,
-                                left: 55
-                            },
-                            x: function (d) {
-                                return d.time;
-                            },
-                            y: function (d) {
-                                return d.count;
-                            },
-                            clipEdge: true,
-                            showValues: true,
-                            valueFormat: function (d) {
-                                return d3.format('d')(d);
-                            },
-                            transitionDuration: 500,
-                            yAxis: {
-                                axisLabel: '',
-                                axisLabelDistance: 30,
-                                tickFormat: function (d) {
-                                    return d3.format('d')(d);
-                                }
-                            },
-                            xAxis: {
-                                tickFormat: function (d) {
-                                    var halfHour = d % 2;
-                                    var hour = (d - halfHour) / 2;
-                                    return moment().hours(hour).minutes(halfHour * 30).format("h:mm A");
-                                }
-                            },
-                            staggerLabels: true
-                        }
-                    },
-                    data: []
+            x: function(d){ return d.label; },
+            y: function(d){ return d.value; },
+            showValues: true,
+            staggerLabels: true,
+            valueFormat: function(d){
+                return d3.format(',.4f')(d);
+            },
+            transitionDuration: 500,
+            xAxis: {
+                axisLabel: 'Agency'
+            },
+            yAxis: {
+                axisLabel: '# of Calls',
+            }
+        }
+    };
+    $scope.data = [{
+        key: "Cumulative Return",
+        values: [
+            { "label" : "311 Supervisor Queue" , "value" : 4 },
+            { "label" : "County Clerk - G" , "value" : 3 },
+            { "label" : "CDBI Building Inspection Queue" , "value" : 2 },
+            { "label" : "DPW Ops Queue" , "value" : 75 },
+            { "label" : "PUC Sewer Ops" , "value" : 10 },
+            { "label" : "Recology_Abandoned" , "value" : 28 },
+            { "label" : "DPT Abandoned Vehicles Work Queue" , "value" : 5 },
+            { "label" : "PUC - Sewer - G" , "value" : 7 },
+        ]
+    }];
+
+}])
+
+
+    .controller('Hood', ['$scope', function($scope) {
+        $scope.options = {
+            chart: {
+                type: 'pieChart',
+                height: 700,
+                width: 700,
+                x: function(d){return d.key;},
+                y: function(d){return d.y;},
+                showLabels: true,
+                duration: 500,
+                labelThreshold: 0.01,
+                labelSunbeamLayout: true,
+                legend: {
+                    margin: {
+                        top: 5,
+                        right: 35,
+                        bottom: 5,
+                        left: 0
+                    }
                 }
             }
-        });
-
-        var searchCategory = function(category){
-            for(var i = 0; i < serviceCategory.length; i++){
-                var exp = serviceCategory[i].exp;
-                if(exp.exec(category) != null)
-                    return serviceCategory[i].name;
-            }
-            return "Other";
         };
 
-        var searchForCategoryIndex = function(category){
-            for(var i = 0; i < serviceCategory.length; i++){
-                if(serviceCategory[i].name == category)
-                    return i;
+        $scope.data = [
+            {
+                key: "Lower Nob Hill",
+                y: 5
+            },
+            {
+                key: "Telegraph Hill 2",
+                y: 2
+            },
+            {
+                key: "Alamo Square",
+                y: 3
+            },
+            {
+                key: "Castro",
+                y: 6
+            },
+            {
+                key: "Mission",
+                y: 27
+            },
+            {
+                key: "South of Market",
+                y: 6
+            },
+            {
+                key: "Unidentified",
+                y: 16
             }
-            return 0;
-        };
-
-        var searchForLabel = function(value, arr){
-            for (var i=0; i < arr.length; i++) {
-                if (arr[i].label === value) {
-                    return i;
-                }
-            }
-            return -1;
-        };
-
-        //Formats and adds an arrest record to multiple data collections for use by nvD3 charts
-        var addToCategoryData = function(record){
-            var category = searchCategory(record.category);
-
-            var chart1Data = $scope.data.categories;
-            var chart1OffenseIndex = searchForLabel(category, chart1Data);
-            if(chart1OffenseIndex < 0){
-                $scope.data.categories.push({
-                    label: category,
-                    value: 1
-                });
-            }else{
-                $scope.data.categories[chart1OffenseIndex].value++;
-            }
-
-            var voiceInData = $scope.data.source.voiceIn;
-            var voiceInIndex = searchForLabel(category, voiceInData);
-            var open311Data = $scope.data.source.open311;
-            var open311Index = searchForLabel(category, open311Data);
-            if(record.source === 'voiceIn'){
-                if(voiceInIndex < 0){
-                    $scope.data.source.voiceIn.push({
-                        label: category,
-                        value: 1
-                    });
-                }else{
-                    $scope.data.source.voiceIn[voiceInIndex].value++;
-                }
-                if(open311Index < 0){
-                    $scope.data.source.open311.push({
-                        label: category,
-                        value: 0
-                    });
-                }
-            }else if(record.source === 'open311'){
-                if(open311Index < 0){
-                    $scope.data.source.open311.push({
-                        label: category,
-                        value: 1
-                    });
-                }else{
-                    $scope.data.source.open311[open311Index].value++;
-                }
-                if(voiceInIndex < 0){
-                    $scope.data.source.voiceIn.push({
-                        label: category,
-                        value: 0
-                    });
-                }
-            }
-
-            var hours = record.date.getHours();
-            var min = record.date.getMinutes();
-
-            var scaledTime = (hours * 2) + parseInt(min/30);
-
-            $scope.data.time[searchForCategoryIndex(category)].values[scaledTime].count++;
-
-        };
-
-        //Load local JSON file using data service
-        dataService.loadData('sf311.json').then(function(response){
-            var data = response.data,
-                description = response.meta.view.description;
-
-            var jsonData = dataService.parseJson(data);
-
-            $scope.description = description;
-
-            for(var j = 0; j < serviceCategory.length; j++){
-                $scope.data.time.push({
-                    key: serviceCategory[j].name,
-                    values: []
-                });
-
-                for(var k = 0; k < 48; k++){
-                    $scope.data.time[j].values.push({
-                        time: k,
-                        count: 0
-                    });
-                }
-            }
-
-            for(var i = 0; i < jsonData.length; i++){
-                addToCategoryData(jsonData[i]);
-            }
-
-            $scope.nvd3.chart1.data = [{
-                key: '',
-                values: $scope.data.categories
-            }];
-
-            $scope.nvd3.chart2.data = [{
-                key: "Male",
-                color: "rgb(214, 39, 40)",
-                values: $scope.data.gender.male
-            }, {
-                key: "Female",
-                color: "rgb(31, 119, 180)",
-                values: $scope.data.gender.female
-            }];
-
-            $scope.nvd3.chart3.data = $scope.data.time;
-
-        });
-
-    }]);
-
-
-
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*'use strict';
-
-angular.module('myApp.view1', ['ngRoute', 'nvd3'])
-
-    .config(['$routeProvider', function($routeProvider) {
-      $routeProvider.when('/view1', {
-        templateUrl: 'view1/view1.html',
-        controller: 'View1Ctrl'
-      });
+        ];
     }])
 
-    .controller('View1Ctrl', [function() {
+    .controller('Category', function($scope){
 
-    }]);*/
+        $scope.options = {
+            chart: {
+                type: 'stackedAreaChart',
+                height: 500,
+                width: 1300,
+                margin : {
+                    top: 20,
+                    right: 20,
+                    bottom: 40,
+                    left: 65
+                },
+                x: function(d){return d[0];},
+                y: function(d){return d[1];},
+                staggerLabels: true,
+                useVoronoi: false,
+                clipEdge: true,
+                duration: 100,
+                useInteractiveGuideline: true,
+                xAxis: {
+                    axisLabel: ('Time (hours)'),
+                    showMaxMin: false,
+                    tickFormat: function(d) {
+                        return d3.format(',.2f')(d);
+                        //return d3.time.format('%x')(new Date(d));
+                        //var halfHour = d % 2;
+                        //var hour = (d - halfHour) / 2;
+                        //return d3().hours(hour).minutes(halfHour * 30).format("h:mm A");
+                    }
+                },
+                yAxis: {
+                    axisLabel: ('# of Calls'),
+                    tickFormat: function(d){
+                        return d3.format(',.2f')(d);
+                    }
+                },
+                zoom: {
+                    enabled: true,
+                    scaleExtent: [1, 10],
+                    useFixedDomain: false,
+                    useNiceScale: false,
+                    horizontalOff: false,
+                    verticalOff: true,
+                    unzoomEventType: 'dblclick.zoom'
+                }
+            }
+        };
+
+        $scope.data = [
+            {
+                "key": "311 External Request",
+                "values": [[1, 1], [2, 1], [3, 2], [4, 2], [5, 2], [6, 2], [7, 2], [8, 2],[9, 2], [10, 2], [11, 2], [12, 2]]
+            },
+
+            {
+                "key": "General Requests",
+                "values": [[1, 1], [2, 1], [3, 2], [4, 2], [5, 4], [6, 4], [7, 5], [8, 6],[9, 9], [10, 14], [11, 18], [12, 25]]
+            },
+            {
+                "key": "Street and Sidewalk Cleaning",
+                "values": [[1, 1], [2, 1], [3, 2], [4, 3], [5, 4], [6, 9], [7, 12], [8, 16],[9, 28], [10, 48], [11, 67], [12, 80]]
+            },
+            {
+                "key": "Street Defects",
+                "values": [[1, 1], [2, 1], [3, 1], [4, 3], [5, 3], [6, 3], [7, 5], [8, 15],[9, 6], [10, 8], [11, 9], [12, 10]]
+            }
+
+        ]
+    })
+
+var circle = [
+    {"cx": 20, "cy": 20, "radius": 20, "color" : "white"}];
+var svgContainer = d3.select("body").append("svg")
+    .attr("width",200)
+    .attr("height",200);
+var text = svgContaner.selectAll("text")
+    .data(circleData)
+    .enter()
+    .append("text");
+var circles = svgContainer.selectAll("circle")
+    .data(circle)
+    .enter()
+    .append("circle");
+var circleAttributes = circles
+    .attr("cx", function (d) { return d.cx; })
+    .attr("cy", function (d) { return d.cy; })
+    .attr("r", function (d) { return d.radius; })
+    .style("fill", function (d) { return d.color; });
+
 

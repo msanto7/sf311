@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <head>
-  <!-- <script src="/app/bower_components/angular/angular.min.js"></script>
- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<!-- D3
-<script src="http://d3js.org/d3.v3.min.js"> </script>
-    <script src="/app/view1/MainController.js"> </script>
-    <script src="/app/view1/view1.js"> </script> -->
-
-   <!--<script
-            src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js">
-    </script>-->
-    <!-- Trying to use nvd3 pie chart
-   <script src="/app/bower_components/angularjs-nvd3-directives-angularjs-nvd3-directives-v0.0.7-41-g0b50abe/angularjs-nvd3-directives-angularjs-nvd3-directives-0b50abe/dist/angularjs-nvd3-directives.js"></script>
-   <!-- <script type="text/javascript" src="/app/angularjs-plugin/wrappers/angularjs/angular-fusioncharts.js"></script>
-    <script src="/app/bower_components/d3/d3.js"></script>
-    <script src="/app/bower_components/nvd3/nv.d3.js"></script>
-    <script src="/app/bower_components/nvd3/build/nv.d3.css"></script> -->
 </head>
 <body ng-app="myApp">
 
 
+    <!--<svg width="200" height="200">
+      <circle cx="20" cy="20" r="5" fill="white" />
+      <text x="40" y="30" font-family="sans-serif" font-size="18px" fill="white">This Data represents the call history from San Francisco's 311 Customer Service Center. These calls were taken and recorded on March 13th, 2016 between 12:00am and 12:00pm.  </text>
+    </svg>-->
+
+    <div class="com-md-3" >
+        <center><h2>San Francisco 311 Customer Service Center </h2>
+        <p>This Data represents the call history from San Francisco's 311 Customer Service Center. <br> These calls were taken and recorded on March 13th, 2016 between 12:00am and 12:00pm.</p>
+        </center>
+    </div>
+
 
     <form>
-        Select a Filter:
-        <input type="radio" ng-model="myVar" value="status"> Case Status
-        <input type="radio" ng-model="myVar" value="agency"> Responsible Agency
-        <input type="radio" ng-model="myVar" value="neighborhood"> Neighborhood
+        <div style ="background-color:DarkBlue" >
+            Select a Filter:
+            <input type="radio" ng-model="myVar" value="category"> Category
+            <input type="radio" ng-model="myVar" value="status"> Case Status
+            <input type="radio" ng-model="myVar" value="agency"> Responsible Agency
+            <input type="radio" ng-model="myVar" value="neighborhood"> Neighborhood
+        </div>
     </form>
     <center>
         <div class="com-md-12" ng-switch="myVar">
+            <div class="com-md-12" ng-switch-when="category">
+                <h1>Category</h1>
+                <p>The category of service calls over time. </p>
+                <div class= "main" style= "background-color:White" ng-controller= "Category">
+                    <nvd3 options='options' data='data'></nvd3>
+                </div>
+            </div>
             <div class="com-md-12" ng-switch-when="status">
                 <h1>Status</h1>
-                <div class= "main" ng-controller= "View1Ctrl">
+                <p>The status of the case as of 3-13-2016 at 12:00pm.</p>
+                <div class= "main" style= "background-color:White" ng-controller= "View1Ctrl">
                     <nvd3 options='options' data='data'></nvd3>
-                   <!-- <h1> {{ exampleData }} </h1>-->
                 </div>
-                <p>Displayed based on open or closed status.</p>
             </div>
             <div class="com-md-12" ng-switch-when="agency">
                 <h1>Responsible Agency</h1>
-                <p>Display based on the agency responsible for servicing the request.</p>
-                <nvd3 options='options' data='data'></nvd3>
-                <!--<nvd3 options="nvd3.chart2.options" data="nvd3.chart2.data"></nvd3>-->
+                <p>The agency responsible for servicing the request.</p>
+                <div class= "main" style= "background-color:White" ng-controller= "Agency">
+                    <nvd3 options='options' data='data'></nvd3>
+                </div>
            </div>
             <div class="com-md-12" ng-switch-when="neighborhood">
                 <h1>Neighborhood</h1>
-                <p>Display based on the neighborhood from which the request came.</p>
-                <nvd3 options='options' data='data'></nvd3>
+                <p>The neighborhood from which the request came.</p>
+                <div class= "main" style= "background-color:White" ng-controller= "Hood ">
+                    <nvd3 options='options' data='data'></nvd3>
+                </div>
             </div>
         </div>
     </center>
