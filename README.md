@@ -1,6 +1,6 @@
-San Francisco 311 Customer Service Center Data
+##San Francisco 311 Customer Service Center Data
 
-This project is a fork from the angular seed project. It is a web application build on AngularJS that utilizes the nvd3 charting library. The data represented
+This project is a fork from the angular seed project. It is a web application built on AngularJS that utilizes the nvd3 charting library. The data represented
  here shows the call history taken by the San Francisco Service Center on March 13th, 2016 from 12:00am to 12:00pm. The data set is provided by [SF OpenData](https://data.sfgov.org/)
 
  The instructions below are an adaption from those provided by the Angular Seed Project. This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
