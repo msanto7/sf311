@@ -1,7 +1,10 @@
 ##San Francisco 311 Customer Service Center Data
 
 This project is a fork from the angular seed project. It is a web application built on AngularJS that utilizes the nvd3 charting library. The data represented
- here shows the call history taken by the San Francisco Service Center on March 13th, 2016 from 12:00am to 12:00pm. The data set is provided by [SF OpenData](https://data.sfgov.org/)
+here shows the call history taken by the San Francisco Service Center on March 13th, 2016 from 12:00am to 12:00pm. The data set is provided by [SF OpenData](https://data.sfgov.org/)
+
+This application uses D3, a javascript framework that manipulates a document based on provided data. D3 methods allow data binding, and can be used to generate SVG elements. This application
+takes advantage of the reusable charts from [NVD3](http://nvd3.org/), and the methods from d3.js by selecting SVG charting elements and operating on them to display data in various ways.
 
  The instructions below are an adaption from those provided by the Angular Seed Project. This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
 You can use it to quickly bootstrap your angular webapp projects and dev environment for these
@@ -28,13 +31,19 @@ us manage and test the application.
 * We get the tools we depend upon via `npm`, the [node package manager][npm].
 * We get the angular code via `bower`, a [client-side code package manager][bower].
 
-We have preconfigured `npm` to automatically run `bower` so we can simply do:
+To install these dependencies enter the commands below.
 
 ```
 npm install
 ```
+```
+npm install bower
+```
+```
+bower install
+```
 
-Behind the scenes this will also call `bower install`.  You should find that you have two new
+ You should find that you have two new
 folders in your project.
 
 * `node_modules` - contains the npm packages for the tools we need
