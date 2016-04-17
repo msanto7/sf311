@@ -16,17 +16,17 @@ body {
     </div>
 
 
-            <div class="com-md-12">
+            <div class="com-md-12" style="float: left;">
                 <h1>Status</h1>
                 <p>The status of the case as of 3-13-2016 at 12:00pm.</p>
-                <div class= "main" style= "background-color:White" ng-controller= "View4Ctrl">
+                <div class= "main" ng-controller= "View4Ctrl">
                     <nvd3 options='options' data='data'></nvd3>
                 </div>
             </div>
-            <div class="com-md-12">
+            <div class="com-md-12" style="float: right;">
                 <h1>Responsible Agency</h1>
                 <p>The agency responsible for servicing the request.</p>
-                <div class= "main" style= "background-color:White" ng-controller= "Agency">
+                <div class= "main" ng-controller= "Agency">
                     <nvd3 options='options' data='data'></nvd3>
                 </div>
            </div>

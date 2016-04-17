@@ -9,11 +9,6 @@ body {
 <body ng-app="myApp">
 
 
-    <!--<svg width="200" height="200">
-      <circle cx="20" cy="20" r="5" fill="white" />
-      <text x="40" y="30" font-family="sans-serif" font-size="18px" fill="white">This Data represents the call history from San Francisco's 311 Customer Service Center. These calls were taken and recorded on March 13th, 2016 between 12:00am and 12:00pm.  </text>
-    </svg>-->
-
     <div class="com-md-3" >
         <center><h2>San Francisco 311 Customer Service Center </h2>
         <p>This Data represents the call history from San Francisco's 311 Customer Service Center. <br> These calls were taken and recorded on March 13th, 2016 between 12:00am and 12:00pm.</p>
@@ -24,7 +19,7 @@ body {
         <div class="com-md-12">
             <h1>Category</h1>
             <p>The category of service calls over time. </p>
-            <div class= "main"  data-ng-controller= "Category2">
+            <div class= "com-md-12"  data-ng-controller= "Category2">
                 <nvd3 options='options' data='data.categories'></nvd3>
             </div>
         </div>

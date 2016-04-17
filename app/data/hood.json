@@ -1,24 +1,24 @@
 {
 	"hood": [{
-		"key": "Lower Nob Hill",
+		"x": "Lower Nob Hill",
 		"y": 5
 	}, {
-		"key": "Telegraph Hill 2",
+		"x": "Telegraph Hill 2",
 		"y": 2
 	}, {
-		"key": "Alamo Square",
+		"x": "Alamo Square",
 		"y": 3
 	}, {
-		"key": "Castro",
+		"x": "Castro",
 		"y": 6
 	}, {
-		"key": "Mission",
+		"x": "Mission",
 		"y": 27
 	}, {
-		"key": "South of Market",
+		"x": "South of Market",
 		"y": 6
 	}, {
-		"key": "Unidentified",
+		"x": "Unidentified",
 		"y": 16
 	}]
 }

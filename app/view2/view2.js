@@ -25,7 +25,7 @@ angular.module('myApp.view2', ['ngRoute', 'nvd3'])
             chart: {
                 type: 'stackedAreaChart',
                 height: 500,
-                width: 1300,
+                width: 1000,
                 margin : {
                     top: 20,
                     right: 20,

@@ -14,7 +14,7 @@ angular.module('myApp.view4', ['ngRoute', 'nvd3'])
             chart: {
                 type: 'discreteBarChart',
                 height: 450,
-                width: 1200,
+                width: 600,
                 margin : {
                     top: 20,
                     right: 20,
@@ -52,7 +52,7 @@ angular.module('myApp.view4', ['ngRoute', 'nvd3'])
         chart: {
             type: 'discreteBarChart',
             height: 450,
-            width: 1200,
+            width: 900,
             margin : {
                 top: 20,
                 right: 20,
