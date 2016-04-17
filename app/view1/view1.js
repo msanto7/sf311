@@ -9,7 +9,92 @@ angular.module('myApp.view1', ['ngRoute', 'nvd3'])
      });
     }])
 
-    .controller('View1Ctrl', ['$scope', function($scope) {
+
+    /*new
+    .service("jsonService", ['$scope', function ($http, $q)
+    {
+        var deferred = $q.defer();   //q variable lets you say I will hold this off and call deferred will called after getting data
+        $http.get('app/data/sf311,json').then(function (data)
+        {
+            deferred.resolve(data);
+        });
+
+        this.getHoods = function()
+        {
+            return deferred.promise;
+        }
+    }])
+
+    //new
+    //This is a new test graph for the purpose of testing the new json parsing data
+
+
+        .controller('test', ['$scope', '$http', function($scope, $http) {
+
+            $http.get('data/sf311.json').success(function(data)
+            {
+                $scope.test = data;
+                console.log($scope.test);
+            })
+
+            /*var promise = jsonService.getHoods();
+            promise.then(function (data)
+            { 
+                $scope.neighborhood = data.data;
+                console.log($scope.neighborhood);
+
+            }]);*/
+
+
+    .controller('test', ['$scope', '$http', function($scope, $http) {
+
+        //file is successfully parsing json data...I cant get it to display howeverx    
+        $http.get('data/hood.json').then(function(response) {
+            $scope.data = response.data;
+            console.log($scope.data);
+        });
+
+        $scope.options = {
+            chart: {
+                type: 'pieChart',
+                height: 700,
+                width: 700,
+                x: function(d){return d.x;},
+                y: function(d){return d.y;},
+                showLabels: true,
+               /* callback: function(){
+                    d3.selectAll('.nvd3.nv-legend g').style('fill', "white");
+                },*/
+                duration: 500,
+                labelThreshold: 0.01,
+                labelSunbeamLayout: true,
+                legend: {
+                    margin: {
+                        top: 5,
+                        right: 35,
+                        bottom: 5,
+                        left: 5
+                    }
+                }
+            }
+        };
+
+        }])
+
+
+
+
+    //old code ******************************************************** working controllers 
+
+    .controller('View1Ctrl', ['$scope', '$http', function($scope, $http) {
+
+
+        //$http get method used to pull in external json data
+        $http.get('data/status.json').then(function(response) {
+            $scope.data = response.data;
+            console.log($scope.data);
+        });
+
         $scope.options = {
             chart: {
                 type: 'discreteBarChart',
@@ -37,17 +122,16 @@ angular.module('myApp.view1', ['ngRoute', 'nvd3'])
                 }
             }
         };
-        $scope.data = [{
-            key: "Cumulative Return",
-            values: [
-                { "label" : "Open" , "value" : 49 },
-                { "label" : "Closed" , "value" : 134 }
-            ]
-        }];
 
      }])
 
-.controller('Agency', ['$scope', function($scope) {
+.controller('Agency', ['$scope', '$http', function($scope, $http) {
+
+    $http.get('data/agency.json').then(function(response) {
+        $scope.data = response.data;
+        console.log($scope.data);
+        });
+
     $scope.options = {
         chart: {
             type: 'discreteBarChart',
@@ -75,8 +159,9 @@ angular.module('myApp.view1', ['ngRoute', 'nvd3'])
             }
         }
     };
-    $scope.data = [{
-        key: "Cumulative Return",
+}])
+/*    $scope.data = [{
+       // key: "Cumulative Return",
         values: [
             { "label" : "311 Supervisor Queue" , "value" : 4 },
             { "label" : "County Clerk - G" , "value" : 3 },
@@ -89,7 +174,7 @@ angular.module('myApp.view1', ['ngRoute', 'nvd3'])
         ]
     }];
 
-}])
+}])*/
 
 
     .controller('Hood', ['$scope', function($scope) {
@@ -97,7 +182,7 @@ angular.module('myApp.view1', ['ngRoute', 'nvd3'])
             chart: {
                 type: 'pieChart',
                 height: 700,
-                width: 700,
+                width: 700, 
                 x: function(d){return d.key;},
                 y: function(d){return d.y;},
                 showLabels: true,
@@ -147,7 +232,12 @@ angular.module('myApp.view1', ['ngRoute', 'nvd3'])
         ];
     }])
 
-    .controller('Category', function($scope){
+    .controller('Category', ['$scope', '$http', function($scope, $http){
+
+        $http.get('data/category.json').then(function(response) {
+            $scope.data = response.data;
+            console.log($scope.data);
+        });
 
         $scope.options = {
             chart: {
@@ -196,7 +286,9 @@ angular.module('myApp.view1', ['ngRoute', 'nvd3'])
             }
         };
 
-        $scope.data = [
+    }])
+
+       /* $scope.data = [
             {
                 "key": "311 External Request",
                 "values": [[1, 1], [2, 1], [3, 2], [4, 2], [5, 2], [6, 2], [7, 2], [8, 2],[9, 2], [10, 2], [11, 2], [12, 2]]
@@ -216,14 +308,18 @@ angular.module('myApp.view1', ['ngRoute', 'nvd3'])
             }
 
         ]
-    })
+    })*/
 
-var circle = [
+
+
+
+
+/*var circle = [
     {"cx": 20, "cy": 20, "radius": 20, "color" : "white"}];
 var svgContainer = d3.select("body").append("svg")
     .attr("width",200)
     .attr("height",200);
-var text = svgContaner.selectAll("text")
+var text = svgContainer.selectAll("text")
     .data(circleData)
     .enter()
     .append("text");
@@ -235,6 +331,7 @@ var circleAttributes = circles
     .attr("cx", function (d) { return d.cx; })
     .attr("cy", function (d) { return d.cy; })
     .attr("r", function (d) { return d.radius; })
-    .style("fill", function (d) { return d.color; });
+    .style("fill", function (d) { return d.color; });*/
 
+    //new code for parsing json data
 

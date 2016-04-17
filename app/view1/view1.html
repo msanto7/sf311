@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <head>
+<link rel="stylesheet" href="view1/view1.css"/>
+<style>
+body {
+    background-image: url("http://photoeverywhere.co.uk/west/usa/san_francisco/golden_gate_distant_viewDSC_5864.jpg");
+}
+</style>
 </head>
 <body ng-app="myApp">
 
@@ -15,8 +21,27 @@
         </center>
     </div>
 
+    <h2 id="demo12"></h2>
+    <div class="hover12 column">
+        <div>
+            <p><strong>Want to know what neighborhoods are providing the most service calls?</strong></p>
+            <figure><a href="#view3"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Location_map_San_Francisco_Central.png" /></a></figure>
+            <span>Hover</span>
+        </div>
+        <div>
+            <p><strong>What types of service calls are most popular?</strong></p>
+            <figure style="background-color:#9b59b6;"><a href="#view2"><img src="http://38.106.4.187/Modules/ShowImage.aspx?imageid=408" /></a></figure>
+            <span>Hover</span>
+        </div>
+        <div>
+            <p><strong>Interested in the agencies responding to our calls and our completion status?</strong></p>
+            <figure style="background-color:#3498db;"><a href="#view4"><img src="http://www.getserialkey.com/images/Animated%20Chart.jpg" /></a></figure>
+            <span>Hover</span>
+        </div>
+    </div>
 
-    <form>
+
+ <!--   <form>
         <div style ="background-color:DarkBlue" >
             Select a Filter:
             <input type="radio" ng-model="myVar" value="category"> Category
@@ -56,7 +81,7 @@
                 </div>
             </div>
         </div>
-    </center>
+    </center>-->
 
 
 </body>
