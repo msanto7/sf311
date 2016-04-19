@@ -1,7 +1,7 @@
 {
 	"categories": [{
 			"key": "311 External Request",
-			"values": [
+			"values": [ 
 				[1, 1],
 				[2, 1],
 				[3, 2],

@@ -1,4 +1,4 @@
-angular.module('app', ['ui.bootstrap'])
+angular.module('app', ['ui.bootstrap']) 
 
     .controller('mainController', function($scope) {
 
