@@ -1,0 +1,27 @@
+{
+	"agency": [{
+		"label": "311 Supervisor Queue", 
+		"value": 4
+	}, {
+		"label": "County Clerk - G",
+		"value": 3
+	}, {
+		"label": "CDBI Building Inspection Queue",
+		"value": 2
+	}, {
+		"label": "DPW Ops Queue",
+		"value": 75
+	}, {
+		"label": "PUC Sewer Ops",
+		"value": 10
+	}, {
+		"label": "Recology_Abandoned",
+		"value": 28
+	}, {
+		"label": "DPT Abandoned Vehicles Work Queue",
+		"value": 5
+	}, {
+		"label": "PUC - Sewer - G",
+		"value": 7
+	}]
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head> 
+<link rel="stylesheet" href="view1/view1.css"/>
+<style>
+body {
+    background-image: url("http://photoeverywhere.co.uk/west/usa/san_francisco/golden_gate_distant_viewDSC_5864.jpg");
+}
+</style>
+</head>
+<body ng-app="myApp">
+ 
+
+    <!--<svg width="200" height="200">
+      <circle cx="20" cy="20" r="5" fill="white" />
+      <text x="40" y="30" font-family="sans-serif" font-size="18px" fill="white">This Data represents the call history from San Francisco's 311 Customer Service Center. These calls were taken and recorded on March 13th, 2016 between 12:00am and 12:00pm.  </text>
+    </svg>-->
+
+    <div class="com-md-3" >
+        <center><h2>San Francisco 311 Customer Service Center </h2>
+        <p>This Data represents the call history from San Francisco's 311 Customer Service Center. <br> These calls were taken and recorded on March 13th, 2016 between 12:00am and 12:00pm.</p>
+        </center>
+    </div>
+
+    <h2 id="demo12"></h2>
+    <div class="hover12 column">
+        <div>
+            <p><strong>Want to know which neighborhoods request the most servicec?</strong></p>
+            <figure><a href="#view3"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Location_map_San_Francisco_Central.png" /></a></figure>
+            <span>Hover</span>
+        </div>
+        <div>
+            <p><strong>What types of service calls are most popular?</strong></p>
+            <figure style="background-color:#9b59b6;"><a href="#view2"><img src="http://38.106.4.187/Modules/ShowImage.aspx?imageid=408" /></a></figure>
+            <span>Hover</span>
+        </div>
+        <div>
+            <p><strong>Interested in the agencies responding to our calls and our completion status?</strong></p>
+            <figure style="background-color:#3498db;"><a href="#view4"><img src="http://www.getserialkey.com/images/Animated%20Chart.jpg" /></a></figure>
+            <span>Hover</span>
+        </div>
+    </div>
+
+
+ <!--   <form>
+        <div style ="background-color:DarkBlue" >
+            Select a Filter:
+            <input type="radio" ng-model="myVar" value="category"> Category
+            <input type="radio" ng-model="myVar" value="status"> Case Status
+            <input type="radio" ng-model="myVar" value="agency"> Responsible Agency
+            <input type="radio" ng-model="myVar" value="neighborhood"> Neighborhood
+        </div>
+    </form>
+    <center>
+        <div class="com-md-12" ng-switch="myVar">
+            <div class="com-md-12" ng-switch-when="category">
+                <h1>Category</h1>
+                <p>The category of service calls over time. </p>
+                <div class= "main" style= "background-color:White" ng-controller= "Category">
+                    <nvd3 options='options' data='data'></nvd3>
+                </div>
+            </div>
+            <div class="com-md-12" ng-switch-when="status">
+                <h1>Status</h1>
+                <p>The status of the case as of 3-13-2016 at 12:00pm.</p>
+                <div class= "main" style= "background-color:White" ng-controller= "View1Ctrl">
+                    <nvd3 options='options' data='data'></nvd3>
+                </div>
+            </div>
+            <div class="com-md-12" ng-switch-when="agency">
+                <h1>Responsible Agency</h1>
+                <p>The agency responsible for servicing the request.</p>
+                <div class= "main" style= "background-color:White" ng-controller= "Agency">
+                    <nvd3 options='options' data='data'></nvd3>
+                </div>
+           </div>
+            <div class="com-md-12" ng-switch-when="neighborhood">
+                <h1>Neighborhood</h1>
+                <p>The neighborhood from which the request came.</p>
+                <div class= "main" style= "background-color:White" ng-controller= "Hood ">
+                    <nvd3 options='options' data='data'></nvd3>
+                </div>
+            </div>
+        </div>
+    </center>-->
+
+
+</body>
+</html>

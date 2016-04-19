@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<head>
+<style>
+  #map {
+    width: 500px;
+    height: 400px;
+    background-color: #CCC;
+    margin-top: 130px;
+    margin-right: 400px;
+    border-style: double;
+    border-color: gray;
+    border-width: 10px; 
+  }
+</style>
+<style>
+body {
+    background-image: url("http://photoeverywhere.co.uk/west/usa/san_francisco/golden_gate_distant_viewDSC_5864.jpg");
+}
+</style>    
+</head>
+<body ng-app="myApp">
+
+    <div class="com-md-3" >
+        <center><h2>San Francisco 311 Customer Service Center </h2>
+        <p>This Data represents the call history from San Francisco's 311 Customer Service Center. <br> These calls were taken and recorded on March 13th, 2016 between 12:00am and 12:00pm.</p>
+        </center>
+    </div>
+
+
+    <div style="float: left;" class="com-md-12">
+        <h1>Neighborhood</h1>
+        <p>The neighborhood from which the request came.</p>
+        <div class= "main" data-ng-controller= "test">
+            <nvd3 options='options' data='data.hood'></nvd3>
+       </div>
+    </div>
+
+    <div style="float: right;"  id="map"></div>
+        <script>
+            function initMap() {
+            var mapDiv = document.getElementById('map');
+            var map = new google.maps.Map(mapDiv, {
+            center: {lat: 37.77, lng: -122.42},
+            zoom: 10
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+
+
+</body>
+</html>

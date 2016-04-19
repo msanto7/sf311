@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<head>
+<style>
+body {
+    background-image: url("http://photoeverywhere.co.uk/west/usa/san_francisco/golden_gate_distant_viewDSC_5864.jpg");
+}
+</style>
+</head>
+<body ng-app="myApp">
+
+
+    <div class="com-md-3" >
+        <center><h2>San Francisco 311 Customer Service Center </h2>
+        <p>This Data represents the call history from San Francisco's 311 Customer Service Center. <br> These calls were taken and recorded on March 13th, 2016 between 12:00am and 12:00pm.</p>
+        </center>
+    </div>
+
+
+            <div class="com-md-12" style="float: left;">
+                <h1>Status</h1>
+                <p>The status of the case as of 3-13-2016 at 12:00pm.</p>
+                <div class= "main" ng-controller= "View4Ctrl">
+                    <nvd3 options='options' data='data'></nvd3>
+                </div>
+            </div>
+            <div class="com-md-12" style="float: right;">
+                <h1>Responsible Agency</h1>
+                <p>The agency responsible for servicing the request.</p>
+                <div class= "main" ng-controller= "Agency">
+                    <nvd3 options='options' data='data'></nvd3>
+                </div>
+           </div>
+
+
+
+
+</body>
+</html>
