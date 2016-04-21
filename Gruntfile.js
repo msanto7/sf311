@@ -1,13 +1,11 @@
 
 
-
-
-
-
 module.exports = function(grunt) {
 
 
 grunt.initConfig({
+
+
   auto_install: {
     local: {},
     subdir: {
@@ -20,11 +18,24 @@ grunt.initConfig({
       }
     }
   },
-});
+};
+
+    'angular-builder': {
+      options: {
+        mainModule: 'mainModuleName'
+      },
+      app: {
+        src:  'src/**/*.js',
+        dest: 'build/project.js'
+      }
+    }
+ 
+  });
 
 
 
 //load plugins
+grunt.loadNpmTasks ('grunt-angular-builder');
 grunt.loadNpmTasks('grunt-auto-install');
 
-};
+};  
